@@ -1,0 +1,244 @@
+.pk-bank-container{
+    padding: 30px 25px;
+    .pk-bank-card{
+        .pk-bank-title{
+            .btn{
+                float: left;
+                width: 200px;
+                height: 46px;
+                font-size: 18px;
+                border: 0;
+                background-color: #5985f7;
+                box-shadow: 0px 2px 16px 1px 
+                    rgba(89, 133, 247, 0.63);
+                border-radius: 5px;
+                &:focus{
+                    outline: none;
+                    border: 0;
+                }
+            }
+            .btn[disabled]{
+                color: #545454;
+                background-color: #eeeeee;
+                border-radius: 5px;
+                border: solid 1px #e8e8e8;
+                box-shadow: none;
+            }
+            span{
+                margin-left: 20px;
+                font-size: 14px;
+                line-height: 46px;
+                color: #fe8c27;
+            }
+        }
+        .pk-table{
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #e8e8e8;
+            .pk-table-head{
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #f5f6fa;
+                border-bottom: 1px solid #e8e8e8;
+                color: #111111;
+                .pk-table-th{
+                    position: relative;
+                    float: left;
+                    width: 20%;
+                    overflow:hidden;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                    &::before{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        content: '';
+                        margin-top: -6px;
+                        width: 1px;
+                        height: 12px;
+                        background-color: #d7d6d6;
+                    }
+                }
+                .pk-table-th:last-child{
+                    &::before{
+                        width: 0;
+                    }
+                }
+            }
+            .pk-table-cent{
+                .pk-table-tr{
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: solid 1px #e8e8e8;
+                    .pk-table-td{
+                        position: relative;
+                        float: left;
+                        width: 20%;
+                        height: 40px;
+                        overflow:hidden;
+                        white-space:nowrap;
+                        text-overflow:ellipsis;
+                        .pk-setup{
+                            border: 0;
+                            background: none;
+                            color: #5985f7;
+                        }
+                        .pk-delete{
+                            color: #ff6767;
+                        }
+                    }
+                    &:nth-child(2n){
+                        background-color: #f8f8f8
+                    }
+                    &:last-child{
+                        border: 0;
+                    }
+                    &:hover{
+                        background-color: #f2f6ff;
+                    }
+                }
+                .pk-table-tr.default{
+                    position: relative;
+                    .defaultPic{
+                        z-index: 1;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 27px;
+                        height: 40px;
+                        color: #fff;
+                        background-color: #5985f7;
+                        border-radius: 0px 19px 19px 0px;
+                    }
+                    .pk-table-td{
+                        .pk-setup{
+                            color: #868686;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pk-bank-nocard{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 14px;
+        color:#9e9e9e ;
+        .pk-btn-blue {
+            padding: 0;
+            margin-top: 40px;
+            width: 300px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 18px;
+            border: none ;
+            background-color: #5985f7;
+            box-shadow: 0px 2px 16px 1px 
+                rgba(89, 133, 247, 0.63);
+            border-radius: 5px;
+            &:hover {
+                background: none ;
+                background-image: linear-gradient(-90deg, #5c87f6 0%, #5f8cf9 100%), linear-gradient(#5280f6, #5280f6);
+            } 
+        } 
+    }
+    .pk-bank-tit{
+        font-size: 18px;
+        color: #111111;
+    }
+    .pk-tips{
+        margin-top: 10px;
+        font-size: 16px;
+	    color: #fe8c27;
+    }
+    .pk-bankAdd-form{
+        margin-top: 10px;
+    }
+    .pk-input-list{
+        margin-bottom: 30px;
+        height: 40px;
+        line-height: 40px;
+        label{
+            float: left;
+            margin: 0;
+            width: 75px;
+            font-size: 16px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: right;
+            color: #111111;
+            &.pk-must{
+                span{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        left: -6px;
+                        content: '*';
+                        line-height: 45px;
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+        .form-group{
+            float: left;
+            margin:0 0 0 10px;
+            .pk-realname{
+                font-size: 20px;
+            }
+            .form-control{
+                width: 260px;
+                height: 40px;
+                color: #545454;
+            }
+            #pk_myDistpicker{
+                select{
+                    height: 40px;
+                }
+            }
+        }
+        .bootstrap-select{
+            float: left;
+            margin:0 0 0 10px;
+            width: 260px !important;
+            .dropdown-toggle{
+                width: 260px;
+                height: 40px;
+                line-height: 28px;
+                &:focus{
+                    outline: none !important;
+                }
+            }
+        }
+        .errText{
+            float: left;
+            margin-left: 10px;
+            max-width: 413px;
+            height: 40px;
+            font-size: 14px;
+            color: #868686;
+        }
+    }
+    .pk-info-subm{
+        margin-left: 85px;
+        width: 260px;
+        button{
+            background-color: #5985f7;
+            box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border: none;
+        }
+        .btn:focus{
+            outline: none;
+        }
+    }
+}

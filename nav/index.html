@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航站</title>
+    <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="stylesheet" href="./nav.css">
+    <script>
+        //根据屏幕大小改变根元素字体大小
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >=
+                        750) { //750这个值，根据设计师的psd宽度来修改，是多少就写多少，现在手机端一般是750px的设计稿，如果设计师给的1920的psd，自己用Photoshop等比例缩小
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) +
+                            'px'; //750这个值，根据设计师的psd宽度来修改，是多少就写多少，现在手机端一般是750px的设计稿，如果设计师给的1920的psd，自己用Photoshop等比例缩小
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-top">
+            <div class="header-bg" id="header"></div>
+            <div class="nav-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="swiper"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="nav-scroll">
+                <div class="scroll-box">
+                    <img src="./img/icon_giagao.png" alt="">
+                    <marquee id="notice" class="scroll-content" width="94%" direction="left"></marquee>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-down-in">
+            <div class="nav-download">
+                <span class="text"></span>
+            </div>
+            <div class="nav-contact">
+                <span class="text"></span>
+            </div>
+        </div>
+        <div class="line-list">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="langList-box">
+        <div class="langList">
+            <div class="title"></div>
+            <div class="langData" id="langData"></div>
+        </div>
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./swiper.min.js"></script>
+<script src="./lang.js"></script>
+<script>
+    function checkLang(){
+        $(".langList-box").fadeIn();
+    }
+    function auto(url) {
+        $(".line-list ul").find('li').eq(b).find('.game-url').html(url);
+        $(".line-list ul").find('li').eq(b).find('.game-status').html(tim * 10 + "ms");
+        if (tim < 10) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('ok');
+        } else if (tim >= 10 && tim <= 30) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('wain');
+        } else if (tim > 30 && tim <= 100) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('no');
+        } else {
+            $(".line-list ul").find('li').eq(b).find('.game-status').html(i18n.timeout);
+        }
+        b++
+    }
+
+    $(function () {
+        
+        var CONTACT_US = ''; //联系客服地址
+        var DOWNLOAD_URL = ''; //APP下载地址
+
+        //获取基础数据
+        getBaseData();
+
+        function getBaseData() {
+            $.ajax({
+                url: BASE_URL + '/getdata',
+                method: 'post',
+                headers: {
+                    lang: getCookie('lang'),
+                },
+            }).then(function (res) {
+                CONTACT_US = res.data.customerServiceLink;
+                // DOWNLOAD_URL = res.data.domain+'/wap#/download';
+                if (res.data.domain.indexOf('http://') >= 0 || res.data.domain.indexOf('https://') >= 0) {
+                    DOWNLOAD_URL = res.data.domain + '/wap#/download';
+                } else {
+                    DOWNLOAD_URL = "http://" + res.data.domain + '/wap#/download';
+                }
+                document.title = res.data.siteName || i18n.station;
+                renderHeader(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染头部
+        function renderHeader(data) {
+            var langHtml = '',langAct = '';
+            langList.map(item=>{
+                if(item.isDefault === 1 && !getCookie('lang')){
+                    langAct = item.defaultLangName;
+                    langHtml += '<div class="lang-item active" data-code="'+item.defaultLangCode+'">'+item.defaultLangName+'</div>'
+                }else if(item.defaultLangCode ==  getCookie('lang')){
+                    langAct = item.defaultLangName;
+                    langHtml += '<div class="lang-item active" data-code="'+item.defaultLangCode+'">'+item.defaultLangName+'</div>'
+                }else{
+                    langHtml += '<div class="lang-item" data-code="'+item.defaultLangCode+'">'+item.defaultLangName+'</div>'
+                }
+            })
+            var str =
+                '<header>' +
+                '<div class="domain"><img class="logo" src="' + data.logo + '" alt="">' +
+                '<p>' + data.siteName + '</p>' +
+                '</div><div id="checkLang" onclick="checkLang()" class="checkLang">' +langAct+
+                '</div></header>';
+            $("#header").html(str);
+            $(".langList-box .title").text(i18n.Language)
+            $(".langList-box .langData").html(langHtml);
+        }
+
+        //获取轮播图
+        getbanner();
+
+        function getbanner() {
+            $.ajax({
+                url: BASE_URL + '/getbanner',
+                method: 'post',
+                headers: {
+                    lang: getCookie('lang'),
+                },
+            }).then(function (res) {
+                renderSwiper(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染轮播图
+        function renderSwiper(data) {
+            var str = '';
+            data.forEach(function (v, i) {
+                str += '<div class="swiper-slide">' +
+                    '<img src="' + v.imgUrl + '" alt="">' +
+                    '</div>'
+            })
+            $("#swiper").html(str);
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: true,
+                loop: true,
+                spaceBetween: 20,
+                effect: 'fade',
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            })
+        }
+
+        //获取公告
+        getNotice();
+
+        function getNotice() {
+            $.ajax({
+                url: BASE_URL + '/getnotice',
+                method: 'post',
+                headers: {
+                    lang: getCookie('lang'),
+                },
+            }).then(function (res) {
+                renderNotice(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染滚动公告
+        function renderNotice(data) {
+            if (!data || data.length < 1) {
+                $('.scroll-box').hide();
+                return;
+            }
+            var str = '';
+            data.forEach(function (v, i) {
+                if (i != data.length - 1) {
+                    str += v.content + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+                } else {
+                    str += v.content;
+                }
+            })
+            $('#notice').html(str);
+        }
+
+
+        //app下载
+        $('.nav-download').click(function () {
+            DOWNLOAD_URL && window.open(DOWNLOAD_URL);
+        })
+
+        //在线客服
+        $('.nav-contact').click(function () {
+            CONTACT_US && window.open(CONTACT_US);
+        })
+
+        //底部联系客服跳转
+        $("#contact").click(function () {
+            CONTACT_US && window.open(CONTACT_US);
+        })
+
+
+        // 判断手机类型 1=android 2=iPhone
+        function getPhoneType() {
+            var u = navigator.userAgent;
+            if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) {
+                return 1;
+            }
+            if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+                return 2;
+            }
+        }
+
+        //android不显示下面下载描述文件区域
+        if (getPhoneType() === 1) {
+            $('.nav-show-bottom').hide();
+        }
+
+
+        //下载描述文件
+        $('.nav-show-bottom').click(function () {
+            function getQueryVal(url) {
+                var url = url || '';
+                var arr = (url.split("?")[1] || url || '').split("&");
+                var o = {};
+                if (arr[0] == '') {
+                    return o
+                }
+                arr.forEach(function (x) {
+                    var ar = x.split("=");
+                    o[ar[0]] = ar[1]
+                });
+                return o
+            }
+
+            var localUrl = DOWNLOAD_URL.split('/i.html')[0]; // http://appdownload.namecdn3.com/
+            var params = getQueryVal(DOWNLOAD_URL); //{s: "aaa", i: "a"}
+            var aaa_a = params.s + '_' + params.i;
+            var fileUrl = localUrl + aaa_a + '/' + aaa_a +
+                '.mobileconfig'; // http://appdownload.namecdn3.com/aaa_a/aaa_a.mobileconfig
+            window.open(fileUrl);
+        });
+
+
+        //获取需要检测的线路
+        getUrl();
+
+        function getUrl() {
+            $.ajax({
+                url: BASE_URL + '/geturl',
+                method: 'post',
+                headers: {
+                    lang: getCookie('lang'),
+                },
+            }).then(function (res) {
+                renderList(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染线路检测
+        function renderList(autourl) {
+            tim = 1
+            setInterval("tim++", 100)
+            b = 0;
+            $.each(autourl, function (i, v) {
+                n = Number(i);
+                if (v.indexOf('http://') >= 0 || v.indexOf('https://') >= 0) {
+                    autourl[n] = v;
+                } else {
+                    autourl[n] = "http://" + v;
+                }
+            });
+
+
+            function butt() {
+                var lineDom = $('.line-list ul');
+                var str = '';
+                for (var i = 0; i < autourl.length; i++) {
+                    str += '<li>' +
+                        '<div class="game-imgStyle"><img src="./img/icon_wangl.png" alt=""></div>' +
+                        `<div class="game-url-style">
+                            <div class="game-url">${autourl[i]}</div>
+                            <div class="game-status">${i18n.loading}</div>
+                        </div>` +
+                        '<div class="game-btn">'+i18n.intoGame+'</div>' +
+                        '</li>'
+                }
+                lineDom.html(str);
+            }
+
+            runLine();
+
+            function runLine() {
+                var str = '';
+                for (var i = 0; i < autourl.length; i++) {
+                    str += "<img src=" + autourl[i] + " width=0 height=0 onerror=auto('" + autourl[i] +
+                        "') style='display:none'>";
+                }
+                $("body").append(str);
+            }
+
+            butt();
+            //进入游戏
+            $('.game-btn').click(function (e) {
+                var url = $(this).prevAll('.game-url-style').find('.game-url').html();
+                window.open(url);
+            })
+        }
+
+        //语言切换
+        $(".langList-box").click(function(){
+            $(this).fadeOut();
+        })
+
+        $("#langData").on("click",".lang-item",function(){
+            if(!$(this).hasClass("active")){
+                $(this).addClass("active").siblings().removeClass("active");
+                setCookie("lang",$(this).data('code'))
+                $("#checkLang").text($(this).text());
+                judgeLang($(this).data('code'))
+                getbanner();
+                getNotice();
+                getUrl();
+                getBaseData();
+                rendering();//渲染页面文字
+                $("html").attr("lang",$(this).data('code'));
+            }
+        })
+    })
+</script>
+
+</html>

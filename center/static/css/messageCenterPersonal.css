@@ -1,0 +1,119 @@
+.pk-message-personal {
+    margin: 0 20px;
+    min-height: 132px;
+    background-color: #ffffff;
+    border: solid 1px #ebe7e9;
+    padding: 28px 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pk-message-personal .unread {
+
+}
+
+.pk-message-personal .unread .unread-message {
+    position: relative;
+    display: inline-block;
+}
+.pk-message-personal .unread .haveRead-message {
+    position: relative;
+    display: inline-block;
+}
+.pk-message-personal .unread .haveRead-message::before {
+    position: absolute;
+    top: 7px;
+    left: -9px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #868686;
+}
+
+.pk-message-personal .unread .unread-message::before {
+    position: absolute;
+    top: 7px;
+    left: -9px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5985f7;
+}
+
+.pk-message-personal .unread .unread-message span {
+    width: 35px;
+    height: 17px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #5985f7;
+}
+.pk-message-personal .unread .haveRead-message span {
+    width: 35px;
+    height: 17px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #868686;
+}
+
+.pk-message-personal .unread .unread-message-del {
+    float: right;
+    color: #ff6464;
+}
+.pk-message-personal .message-content{
+    margin-top: 10px;
+}
+.pk-message-personal .message-content span {
+    width: 100%;
+    font-size: 16px;
+    height: 100%;
+}
+.pk-hidden{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    WORD-WRAP: BREAK-WORD;
+    overflow: hidden;
+}
+.pk-message-personal .message-time{
+     margin-top: 10px;
+ }
+.pk-message-personal .message-time a{
+    cursor:pointer;
+}
+.pk-message-personal .message-time .time{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #868686;
+    float: left;
+}
+.pk-message-personal .message-time .expand{
+    float: right;
+}
+.pk-message-personal .message-time .expand a{
+    color: #5985f7;
+}
+
+.pk-message-personal:hover{
+    background-color: #f2f6ff;
+}
+.haveRead{
+    color: #868686 !important;
+}
+.page{
+    padding: 0 26px;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>超信</title>
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+               <h1>超信</h1> 
+            </div>
+            <div class="QR">
+                <img class="qrimg" src="img/QR01.png" alt="">
+                <div class="code">
+                    <!-- <img src="img/er.png" alt=""> -->
+                    <div id="qrcode"></div>
+                    <p>扫描下载APP</p>
+                </div>
+           </div>
+            <div class="nav">
+                <a class="check" href="indexPC.html">首页</a> <span>|</span> 
+                <a href="indexXY.html">用户协议</a> <span>|</span> 
+            </div>
+           
+        </div>
+    </header>
+    <main>
+        <div class="content">
+                <div class="left">
+                    <div class="phoneOne">
+                        <img src="img/back.png" alt="">
+                    </div>
+                    <div class="phoneTwo">
+                        <img src="img/Front.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="Slogan" src="img/Slogan.png" alt="">
+                    <a class="button first download-btn" href=""><img src="img/IPhone.png" alt=""></a>
+                    <a class="button download-btn" href=""><img src="img/android.png" alt=""></a>
+                </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>超信网络科技有限公司  www.chaoxin.com 2019 © All Rights Reserved <br>
+            琼ICP备18002160号-4
+        </p>
+    </footer>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 100,
+            height : 100
+        });
+        function makeCode () {
+            var elText = "https://apps.apple.com/cn/app/id1492308226";
+            qrcode.makeCode(elText);
+        }
+        makeCode();
+
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent,
+                    app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        // get the current hash
+        var loc = window.location.toString();
+        var hashValue = "";
+        var ind = loc.indexOf("?");
+        if (ind > 0) {
+            hashValue = loc.substring(ind + 1);
+        }
+
+        var params = hashValue.split("&");
+        var queryStringList = [];
+
+        for (var i = 0; i < params.length; i++) {
+            var ind = params[i].indexOf("=");
+            if (ind > 0) {
+                queryStringList[params[i].substring(0, ind)] =
+                    decodeURIComponent(params[i].substring(ind + 1).replace(/\+/g, '%20'));
+            };
+        };
+        var domain = document.location.protocol + "//" + window.location.host;
+        var site = queryStringList["s"];
+        var index = queryStringList["i"];
+        var type = queryStringList["type"];
+        console.log('tag', domain,site,index)
+        $(document).ready(function () {
+            $(".download-btn").click(function () {
+                console.log('tag', domain,site,index,type)
+                //原生app
+                if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+                window.location.href = "https://apps.apple.com/cn/app/id1492308226";
+                } else if (browser.versions.android) {
+                    window.location.href = domain + "/" + site + "_" + index + "/" + site + "_" + index + ".apk";
+                } else {
+                    // var isok = confirm("是否用电脑下载app？");
+                    
+                    // window.location.href = "https://apps.apple.com/cn/app/id1492308226";
+                    window.open("https://apps.apple.com/cn/app/id1492308226")
+                    // if (isok) {
+                    //     window.open(domain + "/" + site + "_" + index + "/" + site + "_" + index + ".apk");
+                    // } else {
+                    //     return;
+                    // }
+                }
+                
+            });
+        });
+    </script>
+</body>
+</html>

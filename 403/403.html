@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="google" content="notranslate" />
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Access is forbidden in your area!</title>
+	<style>
+		.content{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 750px;
+			font-size: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+		.content img{
+			display: block;
+			margin:  0 auto;
+			width: 54.4%;
+		}
+		@media only screen and (max-width: 750px) {
+			.content{
+				left: 0;
+				transform: translate(0,-50%);
+				width: 100%;
+				font-size: 5.333vw;
+				line-height: 5.333vw;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<img src="./img_jinzhi.png" alt="">
+		<p>您所在的地區禁止訪問！</p>
+		<p>Access is forbidden in your area!</p>
+	</div>
+	
+</body>
+</html>

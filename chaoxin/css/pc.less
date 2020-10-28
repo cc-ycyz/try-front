@@ -1,0 +1,200 @@
+html{
+    background: #fff;
+    color: #333;
+}
+a{
+    color: #333;
+}
+header{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    .logo{
+        float: left;
+        height: 100px;
+        img{
+            float: left;
+            padding-top: 25px;
+            width: 50px;
+            height: 50px;
+        }
+        h1{
+            float: left;
+            padding-left: 17px;
+            line-height: 100px;
+            font-size: 28px;
+            
+        }
+    }
+    .nav{
+        font-size: 18px;
+        float: right;
+        line-height: 100px;
+        color: #b0b0b0;
+        a{
+            color: #b0b0b0;
+            padding:0 12px;
+        }
+
+        .check , a:hover{
+            color: #333;
+        }
+        
+    }
+    .QR{
+        position: relative;
+        padding-left: 18px;
+        float: right;
+        img{
+            padding-top: 40px;
+        }
+        .qrimg{
+            width: 20px;
+            height: 20px;
+        }
+        .code{
+            display: none;
+            border-radius: 6px;
+            width: 150px;
+            height: 186px;
+            position: absolute;
+            top: 89px;
+            left: -55px;
+            z-index: 9;
+            background-image: url(../img/QR_BG.png);
+            background-size:100% 100% ;
+            box-shadow: 0px 20px 29px 14px 
+		rgba(41, 117, 225, 0.22);
+            img{
+                padding: 12px;
+                width: 126px;
+                height: 126px;
+            }
+            p{
+                margin-top: 7px;
+                color: #b0b0b0;
+                text-align: center;
+            }
+        }
+    }
+    .QR:hover{
+        .code{
+            display: block;
+        }
+    }
+}
+main{
+    
+    height: 880px;
+    background-image: linear-gradient(55deg, 
+		#2d82ff 0%, 
+		#1ab2ff 100%), 
+	linear-gradient(
+		#e5e5e5, 
+		#e5e5e5);
+	background-blend-mode: normal, 
+        normal;
+    .content{
+        width: 1000px;
+        padding-top: 123px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .bg{
+        position: absolute;
+        left: -145px;
+        width: 634px;
+        height: 634px;
+        background: url(../img/tu.png) no-repeat;
+        background-size:100% 100% ;
+    }
+    .Pact{
+        width: 914px;
+        padding: 50px 43px;
+        height: 620px;
+        background: #fff;
+        position: absolute;
+        top: 80px;
+        border-radius: 30px;
+        .cent{
+            text-align: center;
+        }
+        .txt{
+            height: 620px;
+            overflow: auto;
+        }
+        h2{
+            padding-bottom: 18px;
+        }
+        h3{
+            padding:10px 0;
+        }
+    }
+    .left{
+        float: left;
+        width: 634px;
+        height: 634px;
+        margin-left: -145px;
+        position: relative;
+        background: url(../img/tu.png) no-repeat;
+        background-size:100% ;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .phoneOne{
+            width: 470px;
+            height: 704px;
+            position: absolute;
+            left: 27px;
+            top: 46px;
+            z-index: 1;
+
+        }
+        .phoneTwo{
+            width: 470px;
+            height: 704px;
+            position: absolute;
+            left: 144px;
+            top: -19px;
+            z-index: 2;
+        }
+    }
+    .right{
+        float: right;
+        width: 386px;
+        height: 391px;
+        padding-top: 130px;
+        text-align: center;
+        .Slogan{
+            width: 366px;
+            height: 232px;
+        }
+        .button{
+            display: inline-block;
+            width: 180px;
+            height: 70px;
+            margin-top: 89px;
+            background: #fff;
+            box-shadow: 0px 9px 33px 5px 
+                rgba(77, 150, 255, 0.22);
+            border-radius: 35px;
+            img{
+                width: 180px;
+                height: 70px;
+            }
+        }
+        .first{
+            margin-right:16px;
+        }
+    }
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    p{
+        padding-top: 34px;
+    }
+}

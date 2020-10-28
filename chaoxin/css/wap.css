@@ -1,0 +1,61 @@
+.main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, #2d82ff 0%, #1ab2ff 100%), linear-gradient(#e5e5e5, #e5e5e5);
+  text-align: center;
+}
+.main .notic {
+  padding-top: 1.253333rem;
+  height: 48%;
+}
+.main .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/waptu.png) bottom center no-repeat;
+  background-size: auto 100% ;
+}
+.footer {
+  width: 100%;
+  height: 1.76rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: #fff;
+}
+.footer .logo {
+  float: left;
+  width: 0.933333rem;
+  height: 0.933333rem;
+  margin-left: 0.48rem;
+  margin-top: 0.413333rem;
+  margin-right: 0.226667rem;
+}
+.footer p {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.64rem;
+  font-size: 0.453333rem;
+}
+.footer span {
+  position: absolute;
+  top: 0.973333rem;
+  left: 1.64rem;
+  font-size: 0.346667rem;
+  color: #bfbfbf;
+}
+.footer button {
+  float: right;
+  width: 3.466667rem;
+  height: 1.76rem;
+  border: none;
+  background: url(../img/button.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 0.426667rem;
+  color: #fff;
+}

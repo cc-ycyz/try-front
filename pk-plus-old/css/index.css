@@ -1,0 +1,345 @@
+.index_main .section1{
+    position: relative;
+    width: 100%;
+	height: 100%;
+	background: url(../image/img_sy_baner.png) no-repeat center; 
+    background-size: cover;
+}
+.index_main .section2{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_sy_bg1.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section3{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_sy_bg2.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section4{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_sy_bg3.png) no-repeat center;
+	background-size: cover;
+}
+/*第一屏*/
+.section1 .hands{
+	top: 0;
+	left: 20vw;
+	width: 60vw;
+	background-image: url("../image/txt_sy_1.png");
+	background-size: 100%;
+	background-position: top center;
+}
+/*第二屏*/
+.section .container .text .line{
+    width: 14vw;
+}
+.section .container .text h1{
+	font-size: 48px;
+}
+.section .container .text p{
+	font-size: 28px;
+}
+.section2 .slick{
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	margin-left: 8%
+}
+.section2 .slick .animated{
+	position: absolute;
+	left: 0;
+}
+.section2 .slick .animated img{
+	width: 100%;
+}
+.section2 .slick .slicktwo{
+	left: 18%;
+}
+.section2 .slick .slickthree{
+	left: 36%;
+}
+.section2 .slick .slickfour{
+	left: 51%;
+}
+.section2 .slick .active{
+	z-index: 10;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.section2 .slick .zindex9{
+    z-index: 9;
+	width: 50vh;
+}
+.section2 .slick .zindex8{
+    z-index: 8;
+	width: 48vh;
+}
+.section2 .slick .zindex7{
+    z-index: 7;
+	width: 46vh;
+}
+.section2 .slick .zindex6{
+    z-index: 6;
+	width: 44vh;
+}
+/*第三屏*/
+.section3 .container .text{
+	margin-bottom: 3vw;
+}
+.section3 .thired{
+	display: none;
+}
+.section3 .thired ul{
+	display: -webkit-flex;
+	display: flex;
+	justify-content : space-around;
+	flex-wrap: wrap;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.section3 .thired ul li{
+	width: 22%;
+	text-align: center;
+}
+.section3 .thired ul li img{
+	margin-bottom: 10px;
+	width: 80%;
+}
+/*第四屏*/
+.section4 .security{
+	position: relative;
+	height: 50vh;
+	width: 100%;
+	font-size: 24px;
+	color: #fff;
+}
+.section4 .security .leftbg{
+	display: none;
+	float: left;
+	width: 55%;
+	height: 100%;
+}
+.section4 .security .leftbg .centerimg{
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	align-items : center;
+	justify-content:flex-end;
+}
+.section4 .security .leftbg img{
+	float: right;
+	height: 80%;
+}
+.section4 .security ul{
+	display: none;
+	position: absolute;
+	right: 0;
+	float: left;
+	margin: 0;
+	width: 40%;
+	height: 100%;
+}
+.section4 .security ul li{
+	display: none;
+	position: absolute;
+	display: -webkit-flex !important;
+	display: flex !important;
+	align-items : center;
+	height: 15%;
+	width: 40vw;
+}
+.section4 .security ul li:nth-child(1){
+	top: 4%;
+	left: -4vw;
+}
+.section4 .security ul li:nth-child(2){
+	top: 22%;
+	left: -12vw;
+}
+.section4 .security ul li:nth-child(3){
+	top: 46%;
+	left: 2vw;
+}
+.section4 .security ul li:nth-child(4){
+	top: 68%;
+	left: -12vw;
+}
+.section4 .security ul li:nth-child(5){
+	top: 84%;
+	left: 0;
+}
+.section4 .security img{
+	display: block;
+	float: left;
+	height: 80%;
+}
+.section4 .security .right{
+	padding-left: 10px;
+	float: left;
+	line-height: 1.4;
+}
+.section4 .operation{
+    top: auto;
+    bottom: 0;
+    height: 80vh;
+    width: 60vw;
+    background-image: url(../image/img_cpys_4_ch.png);
+    background-size: 100%;
+}
+@media only screen and (max-width: 1600px){
+	
+}
+@media only screen and (max-width: 1440px){
+	.section4 .security{
+		font-size: 20px;
+	}
+	.section .container .text h1{
+		font-size: 42px;
+	}
+	.section .container .text p{
+		font-size: 22px;
+	}
+	.section4 .operation{
+		width: 50vh;
+	}
+	.section3 .thired ul li img{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 1199px){
+    .section4 .security{
+		font-size: 18px;
+	}
+	.section .container .text h1{
+		font-size: 38px;
+	}
+	.section .container .text p{
+		font-size: 20px;
+	}
+	.section .container .text .line {
+		width: 40vw;
+		height: 2px;
+	}
+	.section3 .thired ul{
+		font-size: 22px;
+	}
+	.section3 .thired ul li img{
+		width: 60%;
+	}
+	.section4 .security{
+		position: relative;
+		font-size: 14px;
+	}
+	.section2 .slick{
+		height: 40vw;
+	}
+	.section2 .slick .zindex9{
+		z-index: 9;
+		width: 40vw;
+	}
+	.section2 .slick .zindex8{
+		z-index: 8;
+		width: 38vw;
+	}
+	.section2 .slick .zindex7{
+		z-index: 7;
+		width: 36vw;
+	}
+	.section2 .slick .zindex6{
+		z-index: 6;
+		width: 34vw;
+	}
+}
+@media only screen and (max-width: 767px){
+	.section1 .hands{
+		top: 0;
+		left: 10vw;
+		width: 80vw;
+		background-image: url("../image/txt_sy.png");
+		background-size: 100%;
+		background-position: center;
+	}
+    .section4 .security{
+		font-size: 14px;
+	}
+	.section .container .text h1{
+		font-size: 22px;
+	}
+	.section .container .text p{
+		font-size: 14px;
+	}
+	.section3 .thired ul{
+		font-size: 14px;
+	}
+	.section3 .thired ul li {
+		width: 40%;
+		margin-bottom: 10vw;
+	}
+	.section3 .thired ul li img{
+		width: 50%;
+	}
+	.section4 .security{
+		margin-top: 2vw;
+		height: 70vw;
+	}
+	.section4 .security .leftbg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.section4 .security ul{
+		width: 100%;
+	}
+	.section4 .security .leftbg img{
+		position: absolute;
+		bottom: 0;
+		margin-top: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.section4 .security ul li:nth-child(1){
+		top: 0;
+		left: 38vw;
+	}
+	.section4 .security ul li:nth-child(2){
+		top: 14vw;
+		left: 48vw;
+	}
+	.section4 .security ul li:nth-child(3){
+		top: 31vw;
+		left: 54vw;
+	}
+	.section4 .security ul li:nth-child(4){
+		top: 46vw;
+		left: 49vw;
+	}
+	.section4 .security ul li:nth-child(5){
+		top: 58vw;
+		left: 45vw;
+	}
+}
+@media only screen and (max-width: 340px){
+    .section4 .security{
+		font-size: 12px;
+	}
+	.section .container .text h1{
+		font-size: 20px;
+	}
+	.section .container .text p{
+		font-size: 14px;
+	}
+	.section3 .thired ul{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>首页</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<!--默认样式-->
+	<link rel="stylesheet" href="css/reset.css">	
+	<!--响应式框架-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--css3动画库-->
+	<link rel="stylesheet" href="css/animate.css">	
+	<!--页面滚动基础样式-->
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<!--导航样式-->
+	<link rel="stylesheet" href="css/head.css" />
+	<!--图片和滚屏样式-->
+	<link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+	<div class="loading">
+		<embed class="img" src="image/loading.svg" type="image/svg+xml" />
+	</div>
+	<!-- 导航 -->
+	<header class="header"> 
+		<div class="container clearfix"> 
+			<div class="left">
+				<a href="index.html" ><img src="image/logo.png" alt="" class="img" /></a>
+			</div>
+			<div class="nav"> 
+				<ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+					<li class="active">
+						<div class="hover"></div>						
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<div class="hover"></div>
+						<a href="product.html">产品优势</a>
+					</li>
+					<li>
+						<div class="hover"></div>
+						<a href="peculiarity.html">产品特点</a>
+					</li>
+					<li>
+						<div class="hover"></div>
+						<a href="aboutus.html">关于我们</a>					
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" id="navToggle">
+	            <span></span>
+	        </a>
+		</div>
+	</header>
+	<!--移动端的导航-->
+	<div class="m_nav">
+		<div class="top clearfix">
+			<img src="image/closed.png" alt="" class="closed" />
+		</div>
+		<div class="logo">
+			<img src="image/logo.png" alt="" />
+		</div>
+		<ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+			<li>
+				<a class="yellow" href="javascript:void(0)">首页</a>
+			</li>
+			<li>
+				<a href="product.html">产品优势</a>
+			</li>
+			<li>
+				<a href="peculiarity.html">产品特点</a>
+			</li>
+			<li>
+				<a href="aboutus.html">关于我们</a>					
+			</li>
+		</ul>
+	</div>
+	<!-- 内容 -->
+    <div id="index_main" class="index_main">
+    	<!--导航-->
+        <div class="section section1">
+            <div class="container">
+				<div class="adaption hands animated slow"></div>
+        	</div>
+        </div>
+        <div class="section section2">
+        	<div class="container">
+				<div class="text animated">
+					<h1>人性碰撞设计 开启视觉盛宴</h1>
+					<div class="line"></div>
+					<p>源于人性对美的追求，以撩动视觉的愉悦为基准，<span class="yellow">设计出多套能触动您视网膜感官的精美模板，</span>让您真正享受到色彩从设计中散发出的极致之美。</p>
+				</div>
+				<div class="clearfix slick animated slow">
+					<div class="slickone zindex9 animated slow">
+						<img src="image/img_sy_1.png" />
+					</div>
+					<div class="slicktwo zindex8 animated slow">
+						<img src="image/img_sy_2.png" />
+					</div>
+					<div class="slickthree zindex7 animated slow">
+						<img src="image/img_sy_3.png" />
+					</div>
+					<div class="slickfour zindex6 animated slow">
+						<img src="image/img_sy_4.png" />
+					</div>
+				</div>
+        	</div>
+        </div>
+        <div class="section section3">
+        	<div class="container">
+				<div class="text animated">
+					<h1>互联网思维出发 酣畅淋漓的体验</h1>
+					<div class="line"></div>
+					<p>让游戏体验从内而外的触及到您的每一个燃点，简直是爽到爆。</p>
+				</div>
+				<div class="thired animated slow">
+					<ul>
+						<li>
+							<img src="image/icon_sy_1.png" />
+							<p>每一个流程都是以逻辑严谨为基本原则。</p>
+						</li>
+						<li>
+							<img src="image/icon_sy_2.png" />
+							<p>基于科技文明里的互联网思维开发。</p>
+						</li>
+						<li>
+							<img src="image/icon_sy_3.png" />
+							<p>保证游戏系统的每一步流程都是畅通的。</p>
+						</li>
+						<li>
+							<img src="image/icon_sy_4.png" />
+							<p>让你的游戏体验更加的稳定且好用。</p>
+						</li>
+					</ul>
+				</div>
+        	</div>
+        </div>
+        <div class="section section4">
+        	<div class="container">
+				<div class="text animated">
+					<h1>多道防护之门 安全从不懈怠</h1>
+					<div class="line"></div>
+					<p>采用先进牢固的技术，从每一个操作细节做到无懈可击的安全防护。</p>
+				</div>
+				<div class="security">
+					<div class="leftbg animated">
+						<div class="centerimg">
+							<img src="image/img_1.png" />
+						</div>
+					</div>
+					<ul>
+						<li class="clearfix animated">
+							<img src="image/icon_sy_5.png" />
+							<div class="right">
+								<p>弱密码验证和</p>
+								<p>资金取款保护</p>
+							</div>
+						</li>
+						<li class="clearfix animated">
+							<img src="image/icon_sy_6.png" />
+							<div class="right">
+								<p>异地登录提醒</p>
+								<p>保障账户安全</p>
+							</div>
+						</li>
+						<li class="clearfix animated">
+							<img src="image/icon_sy_7.png" />
+							<div class="right">
+								<p>采用大数据全面</p>
+								<p>监控机制</p>
+							</div>
+						</li>
+						<li class="clearfix animated">
+							<img src="image/icon_sy_8.png" />
+							<div class="right">
+								<p>人工智能分析</p>
+								<p>开奖结果</p>
+							</div>
+						</li>
+						<li class="clearfix animated">
+							<img src="image/icon_sy_9.png" />
+							<div class="right">
+								<p>Ai来风控</p>
+								<p>降低亏损风险</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+        	</div>
+        </div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

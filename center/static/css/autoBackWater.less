@@ -1,0 +1,115 @@
+.pk-autoback-water{
+    padding: 10px 25px;
+    .pk-autoback-head{
+        height: 50px;
+        h1{
+            float: left;
+            line-height: 50px;
+            font-size: 18px;
+            color: #111;
+        }
+        .pk-autoback-btn{
+            float: right;
+            font-size: 14px;
+            .btn{
+                border: 0;
+                width: 111px;
+                height: 36px;
+                background-color: #5985f7;
+                border-radius: 18px;
+            }
+            .btn:focus{
+                outline: none;
+            }
+            #backdetails{
+                color: #9198ad;
+                background-color: #fff;
+                border: solid 1px #e8e8e8;
+            }
+        }
+    }
+    .pk-center-tit{
+        margin-top: 10px;
+        height: 50px;
+        h1{
+            float: left;
+            line-height: 50px;
+            font-size: 18px;
+            color: #111;
+        }
+        .pk-center-titright{
+            float: right;
+            padding-top: 5px;
+            .pk-backwater{
+                float: left;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #2b2b2b;
+                .pk-money{
+                    margin-right: 10px;
+                    color: #ff6464;
+                    span{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    .pk-autoback-center{
+        width: 100%;
+        text-align: center;
+        border: 1px solid #e8e8e8;
+        .pk-table-head{
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #f5f6fa;
+            border-bottom: 1px solid #e8e8e8;
+            color: #111111;
+            .pk-table-th{
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    content: '';
+                    margin-top: -6px;
+                    width: 1px;
+                    height: 12px;
+                    background-color: #d7d6d6;
+                }
+            }
+            .pk-table-th:last-child{
+                &::before{
+                    width: 0;
+                }
+            }
+        }
+        .pk-table-cent{
+            .pk-table-tr{
+                height: 40px;
+                line-height: 40px;
+                border-bottom: solid 1px #e8e8e8;
+                .pk-table-td{
+                    height: 40px;
+                    overflow:hidden;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                }
+                &:nth-child(2n){
+                    background-color: #f8f8f8
+                }
+                &:last-child{
+                    border: 0;
+                }
+                &:hover{
+                    background-color: #f2f6ff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="google" content="notranslate" />
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title i18n-content="yoyoCard"></title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">	
+	<link rel="stylesheet" href="css/fullpage.min.css" />
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/chess.css">
+</head>
+<body>
+	<!--loading-->
+	<div class="loading">
+		<img class="img" src="images/loading.gif" alt="">
+	</div>
+	<div class="nav">
+		<a class="logo" href="/"><img src="./images/logo.png" alt=""></a>
+		<img class="menu-btn" src="./images/wap/wap_dh_icon.png" alt="">
+		<ul class="nav-list">
+			<li class="nav-item home"><a class="link jump" href="/" i18n-content="home"></a></li>
+			<li class="nav-item introduction active">
+				<a class="link arrow" href="javascript:;" i18n-content="introduction"></a>
+				<ul class="dropdown-menu">
+					<li><a class="jump" href="./cashnet.html" i18n-content="Cashnet"></a></li>
+					<li class="active"><a class="jump" href="./chess.html" i18n-content="yoyoCard"></a></li>
+				</ul>
+			</li>
+			<li class="nav-item contentus">
+				<a class="pcimg link" href="contentus.html" i18n-content="contentus"></a>
+				<a class="jump wapimg link" href="/#contact" i18n-content="contentus"></a>
+			</li>
+			<li class="nav-item lang">
+				<a class="link arrow" href="javascript:;" i18n-content="lang"></a>
+				<ul class="dropdown-menu" id="check-language">
+					<li class="lang-en active" data-lang="en">English</li>
+					<li class="lang-tc" data-lang="tc">新加坡</li>
+					<li class="lang-vi" data-lang="vi">Việt Ngữ</li>
+					<li class="lang-th" data-lang="th">ไทย</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- <div class="foot">
+		<a class="logo" href="/">YOYOGAMING</a>
+	</div> -->
+	<!-- <div class="controlBtn delay-1_5s">
+		<div class="buttonTop"></div>
+		<div class="buttonBto"></div>
+	</div> -->
+	<!-- 内容 -->
+    <div id="chess_main" class="index_main">
+        <div class="section section1">
+			<div class="container d-flex justify-around align-center">
+				<div class="text-img">
+					<script>
+						function getImgLink(name){
+							var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+							if(arr=document.cookie.match(reg))
+								return unescape(arr[2]);
+							else
+								return null;
+						}
+						var imgLink = getImgLink('language') || 'en';
+						document.write('<img class="title '+imgLink+' animated delay-0_2s" src="./images/wap/qp/zym_qp_'+imgLink+'.png" alt="">')
+					</script>
+					
+					<div class="content animated delay-0_4s">
+						<p i18n-content="chessvip"></p>
+						<p i18n-content="chesscustom"></p>
+					</div>
+				</div>
+				<div class="game-img">
+					<img class="top animated delay-0_2s" src="./images/pc/zym_qp_1_img1_en.png" alt="">
+					<div class="item d-flex justify-between align-center">
+						<img class="small animated delay-0_2s" src="./images/pc/zym_qp_1_img2_en.png" alt="">
+						<img class="small animated delay-0_4s" src="./images/pc/zym_qp_1_img3_en.png" alt="">
+					</div>
+					<div class="item d-flex justify-between align-center">
+						<img class="small animated delay-0_6s" src="./images/pc/zym_qp_1_img4_en.png" alt="">
+						<img class="small animated delay-0_8s" src="./images/pc/zym_qp_1_img5_en.png" alt="">
+					</div>
+				</div>
+				<div class="dis-none hang animated delay-0_4s">
+					<img src="./images/wap/qp/wap_zym_qp_1_icon_xh.png" alt="">
+				</div>
+			</div>
+        </div>
+        <div class="section section2">
+			<div class="title commetit animated delay-0_2s">
+				<h1 i18n-content="yoyointroduce"></h1>
+				<div class="mintit" i18n-content="summer"></div>
+			</div>
+			<div class="container d-flex justify-center align-center">
+				<div class="img-box">
+					<img class="bottom animated delay-0_2s" src="./images/pc/zym_qp_2_img3_en.png" alt="">
+					<img class="center animated delay-0_4s" src="./images/pc/zym_qp_2_img2_en.png" alt="">
+					<img class="top animated delay-0_6s" src="./images/pc/zym_qp_2_img1_en.png" alt="" >
+				</div>
+				<div class="function animated delay-0_4s">
+					<div class="title" i18n-content="function"></div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportDirection"></div>
+						<div class="item-list yes" i18n-content="supportLang"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportApp"></div>
+						<div class="item-list yes" i18n-content="supportH5"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportFish"></div>
+						<div class="item-list yes" i18n-content="supportEle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="https://www.yoyo888.net" i18n-content="tryplay" class="try-btn"></a>
+			</div>
+		</div>
+		<div class="section section3">
+			<div class="tits animated delay-0_2s">
+				<h1 i18n-content="goldKing"></h1>
+			</div>
+			<div class="container d-flex justify-center align-center">
+				<div class="function animated delay-0_4s">
+					<div class="title" i18n-content="function"></div>
+					<div class="d-flex function-item ">
+						<div class="item-list no" i18n-content="supportDirection"></div>
+						<div class="item-list no" i18n-content="supportLang"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportApp"></div>
+						<div class="item-list yes" i18n-content="supportH5"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportFish"></div>
+						<div class="item-list yes" i18n-content="supportEle"></div>
+					</div>
+				</div>
+				<div class="img-box">
+					<img class="bottom animated delay-0_2s" src="./images/pc/zym_qp_3_img2_en.png" alt="">
+					<img class="center animated delay-0_4s" src="./images/pc/zym_qp_3_img1_en.png" alt="">
+				</div>
+			</div>
+			<div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="http://eg-app.sx5r.cn/rrr/" i18n-content="downloadapp" class="try-btn"></a>
+			</div>
+			<!-- <div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="http://eg-app.sx5r.cn/egc/" i18n-content="tryplay" class="try-btn"></a>
+			</div> -->
+		</div>
+		<div class="section section4">
+			<div class="tits animated delay-0_2s">
+				<h1 i18n-content="redJYear"></h1>
+			</div>
+			<div class="container d-flex justify-center align-center">
+				<div class="img-box">
+					<img class="bottom animated delay-0_2s" src="./images/pc/zym_qp_4_img2_en.png" alt="">
+					<img class="center animated delay-0_4s" src="./images/pc/zym_qp_4_img1_en.png" alt="">
+				</div>
+				<div class="function animated delay-0_4s">
+					<div class="title" i18n-content="function"></div>
+					<div class="d-flex function-item ">
+						<div class="item-list no" i18n-content="supportDirection"></div>
+						<div class="item-list no" i18n-content="supportLang"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportApp"></div>
+						<div class="item-list yes" i18n-content="supportH5"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportFish"></div>
+						<div class="item-list yes" i18n-content="supportEle"></div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="http://egh0646b.egchesscm.com/" i18n-content="tryplay" class="try-btn"></a>
+			</div> -->
+		</div>
+		<div class="section section5">
+			<div class="tits animated delay-0_2s">
+				<h1 i18n-content="nightly"></h1>
+			</div>
+			<div class="container d-flex justify-center align-center">
+				<div class="function animated delay-0_4s">
+					<div class="title" i18n-content="function"></div>
+					<div class="d-flex function-item ">
+						<div class="item-list no" i18n-content="supportDirection"></div>
+						<div class="item-list no" i18n-content="supportLang"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportApp"></div>
+						<div class="item-list yes" i18n-content="supportH5"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportFish"></div>
+						<div class="item-list yes" i18n-content="supportEle"></div>
+					</div>
+				</div>
+				<div class="img-box">
+					<img class="bottom animated delay-0_2s" src="./images/pc/zym_qp_5_img2_en.png" alt="">
+					<img class="center animated delay-0_4s" src="./images/pc/zym_qp_5_img1_en.png" alt="">
+				</div>
+			</div>
+			<!-- <div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="http://egtd2b24.egchesscm.com/" i18n-content="tryplay" class="try-btn"></a>
+			</div> -->
+		</div>
+		<div class="section section6">
+			<div class="tits animated delay-0_2s">
+				<h1 i18n-content="blackFlow"></h1>
+			</div>
+			<div class="container d-flex justify-center align-center">
+				<div class="img-box">
+					<img class="bottom animated delay-0_2s" src="./images/pc/zym_qp_6_img2_en.png" alt="">
+					<img class="center animated delay-0_4s" src="./images/pc/zym_qp_6_img1_en.png" alt="">
+				</div>
+				<div class="function animated delay-0_4s">
+					<div class="title" i18n-content="function"></div>
+					<div class="d-flex function-item ">
+						<div class="item-list no" i18n-content="supportDirection"></div>
+						<div class="item-list no" i18n-content="supportLang"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportApp"></div>
+						<div class="item-list yes" i18n-content="supportH5"></div>
+					</div>
+					<div class="d-flex function-item ">
+						<div class="item-list yes" i18n-content="supportFish"></div>
+						<div class="item-list yes" i18n-content="supportEle"></div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="http://egr5f841.egchesscm.com/" i18n-content="tryplay" class="try-btn"></a>
+			</div> -->
+		</div>
+	</div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/flexible.js"></script>
+	<script src="./js/jquery.fullPage.min.js"></script>
+	<script src="./lib/i18ns/di18n.min.js"></script>
+    <script src="./lib/i18ns/en.js"></script>
+	<script src="./lib/i18ns/zh.js"></script>
+	<script src="./lib/i18ns/tc.js"></script>
+	<script src="./lib/i18ns/vi.js"></script>
+	<script src="./lib/i18ns/th.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/chess.js"></script>
+	
+</body>
+</html>

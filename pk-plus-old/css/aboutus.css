@@ -1,0 +1,387 @@
+.index_main .section1{
+    position: relative;
+    width: 100%;
+	height: 100%;
+	background: url(../image/polina.png) no-repeat center; 
+    background-size: cover;
+}
+.index_main .section2{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_about_2_bg1.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section3{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_about_3_bg.png) no-repeat center;
+	background-size: cover;
+}
+video { display: block; }
+/*第一屏*/
+.section1 #video{
+    z-index: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%; 
+    height: auto; 
+    background: url(../image/polina.png) no-repeat;
+    background-size: cover; 
+}
+.section1 .text{
+    margin: 0 auto;
+    width: 45vw;
+}
+.section1 .text .english{
+    font-size: 24px;
+}
+.section.section1 .container .text .line{
+    height: 2px;
+    width: 100%;
+    background-color: #fff
+}
+/*文字两端对其*/
+.alignment{
+    line-height: 0.5;
+    text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    text-align-last:justify;/* ie9*/
+}
+.alignment:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;  
+    height: 0;
+    margin: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){/* chrome*/
+    .test1:after{
+        content:".";
+        display: inline-block;
+        width:100%;
+        overflow:hidden;
+        height:0;
+    }
+}
+/*第二屏*/
+.section2 .lefttext{
+    float: right;
+    width: 90%;
+}
+.section2 .lefttext .secondTxt h1{
+	letter-spacing: 1.6rem;
+}
+.section2 .lefttext .secondTxt .english{
+    font-size: 24px;
+	letter-spacing: 0.8rem;
+}
+.section2 .lefttext .secondTxt ul li{
+    margin-top: 3vw;
+    width: 12.5%;
+	text-align: center
+}
+.section2 .lefttext .secondTxt ul li img{
+    width: 90%;
+}
+.section2 .background{
+    top: 50%;
+    left: auto;
+    right: 0;
+    width: 86vw;
+    height: 37vw;
+    transform: translateY(-50%);
+    background-image: url("../image/img_about_2_bg2.png");
+    background-size: 100%;  
+}
+.section2 .background p{
+    margin-top: 2vw;
+    text-align: right;
+    font-size: 24px;
+	letter-spacing: 10px;
+	color: #ffffff;
+	opacity: 0.4;
+}
+.section2 .background img{
+    width: 100%;
+}
+.section2 .background .leftBall{
+    position: absolute;
+    top: -2vw;
+    left: -8vw;
+    width: 20vw;
+}
+.section2 .background .bigBall{
+    position: absolute;
+    bottom: -25vw;
+    right: 0;
+    width: 40vw;
+}
+/*第三屏*/
+.section3 .container .text{
+    margin: 0 auto;
+	width: 20vw;
+}
+.slideBox img{
+    width: 100%;
+}
+.slideBox{
+    margin-top: 2vw;
+    display: -webkit-flex;
+    display: flex;
+}
+.slideBox .active.slideimg{
+    z-index: 9;
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    opacity:1;
+    transform:scale(1.1);   
+    -moz-box-shadow:0px 0px 6vw #333333;
+    -webkit-box-shadow:0px 0px 6vw #333333; 
+    box-shadow:0px 0px 6vw #333333;
+}
+.slideBox .slideimg{
+    display: none;
+    position: relative;
+    width: 25%;
+    opacity:0.8;
+    transition:all 300ms ease;
+}
+.slideBox .slideimg .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 30% 0 0;
+    text-align: center;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+}
+.slideBox .slideimg .content img{
+    width: 20%;
+}
+.slideBox .slideimg .content .tit{
+   font-size: 24px;
+   line-height: 3;
+}
+.slideBox .slideimg .content .line{
+    margin: 0 auto 15%;
+    width: 10%;
+    height: 1px;
+	background-color: #ffffff;
+ }
+.slideBox .slideimg .content p{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 28px;
+    line-height: 1.5;
+    word-wrap:break-word
+}
+@media only screen and (max-width: 1600px){
+	
+}
+@media only screen and (max-width: 1440px){
+	.section4 .security{
+		font-size: 20px;
+	}
+	.section .container .text h1{
+		font-size: 42px;
+	}
+	.section .container .text p{
+		font-size: 22px;
+	}
+	.section4 .operation{
+		width: 50vh;
+    }
+}
+@media only screen and (max-width: 1336px){
+    .section1 #video{
+        width: auto; 
+        height: 100%; 
+    }
+}
+@media only screen and (max-width: 1199px){
+    .section1 .text{
+        width: 60vw;
+    }
+    .section2 .background{
+        background-image: url("../image/img_about_2_bg2ydd.png")
+    }
+    .section2 .background .leftBall{
+        top: -10vw;
+        width: 30vw;
+    }
+    .section2 .background .bigBall{
+        width: 50vw;
+        bottom: -40vw;
+    }
+    .section2 .lefttext{
+        position: absolute;
+        bottom: 0;
+    }
+    .section2 .lefttext .secondTxt h1,
+    .section2 .lefttext .secondTxt p{
+        padding-left: 3vw;
+    }
+    .section2 .lefttext .secondTxt ul li{
+        width: 20%;
+    }
+    .section3 .container .text{
+        width: 30vw;
+    }
+    .slideBox .slideimg .content p{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .section1 .text{
+        width: 80vw;
+    }
+    .slideBox .slideimg .content .tit{
+        font-size: 18px;
+    }
+    .slideBox .slideimg .content p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .section.section1 .container .text .line{
+        margin: 5vw auto 4vw;
+        height: 1px;
+    }
+    .section1 .container .text h1{
+        font-size: 30px
+    }
+    .section1 .text .english{
+        font-size: 12px;
+    }
+    .section .container .text p{
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8
+    }
+    .section2 .background p{
+        font-size: 18px;
+    }
+    .section2 .lefttext .secondTxt h1{
+        font-size: 22px;
+        letter-spacing: 1rem;
+    }
+    .section2 .lefttext .secondTxt .english{
+        font-size: 14px;
+        letter-spacing: 0.5rem
+    }
+    .section2 .background .leftBall{
+        top: -16vw;
+        left: -20vw;
+        width: 55vw;
+    }
+    .section2 .background .bigBall{
+        width: 60vw;
+        bottom: auto;
+    }
+    .section3 .container{
+        padding-right: 0;
+    }
+    .section3 .container .text h1{
+        margin: 0;
+        font-size: 28px;
+        font-family: PingFangSC;
+        font-weight: normal
+    }
+    .section3 .container .text p{
+        font-size: 14px;
+    }
+    .section3 .container .text{
+        margin: 0;
+        width: 40vw;
+    }
+    .slideBox{
+        float: right;
+        display: block;
+        width: 90vw;
+    }
+    .slideBox .slideimg{
+        width: 100%;
+        height: 30vw;
+        overflow: hidden;
+    }
+    .slideBox img.bg{
+        position: absolute;
+        top: -60vw;
+    }
+    .slideBox .slideimg .content{
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items : center; 
+        justify-content : space-between;
+        padding: 0;
+    }
+    .slideBox .slideimg .content .top{
+        flex: 1;
+    }
+    .slideBox .slideimg .content .bottom{
+        flex: 2;
+    }
+    .slideBox .slideimg .content img{
+        width: 10vw;
+    }
+    .slideBox .slideimg .content .tit{
+        font-size: 16px;
+        line-height: 2;
+    }
+    .slideBox .slideimg .content .line{
+        margin: 0 auto;
+    }
+    .slideBox .slideimg .content p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 340px){
+    .section1 .text{
+        width: 100%;
+    }
+    .section1 .container .text h1{
+        font-size: 26px
+    }
+    .section .container .text p{
+        font-size: 12px;
+    }
+    .section2 .background p{
+        font-size: 14px;
+    }
+    .section2 .lefttext .secondTxt h1{
+        font-size: 20px;
+        letter-spacing: 0.8rem;
+    }
+    .section2 .lefttext .secondTxt .english{
+        font-size: 12px;
+        letter-spacing: 0.2rem
+    }
+    .section3 .container .text h1{
+        font-size: 24px;
+    }
+    .slideBox .slideimg{
+        height: 20vw;
+    }
+    .slideBox .slideimg .content .tit{
+        font-size: 13px;
+    }
+    .slideBox .slideimg .content img{
+        width: 6vw;
+    }
+    .slideBox .slideimg .content p{
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>产品特点</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<!--默认样式-->
+	<link rel="stylesheet" href="css/reset.css">	
+	<!--响应式框架-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--css3动画库-->
+	<link rel="stylesheet" href="css/animate.css">	
+	<!--页面滚动基础样式-->
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<!--导航样式-->
+	<link rel="stylesheet" href="css/head.css" />
+	<!--图片和滚屏样式-->
+	<link rel="stylesheet" href="css/peculiarity.css">
+	
+</head>
+<body>
+	<div class="loading">
+		<embed class="img" src="image/loading.svg" type="image/svg+xml" />
+	</div>
+	<!-- 导航 -->
+	<header class="header"> 
+		<div class="container clearfix"> 
+			<div class="left">
+				<a href="index.html" ><img src="image/logo.png" alt="" class="img" /></a>
+			</div>
+			<div class="nav"> 
+				<ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+					<li>
+						<div class="hover"></div>						
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<div class="hover"></div>
+						<a href="product.html">产品优势</a>
+					</li>
+					<li class="active">
+						<div class="hover"></div>
+						<a href="javascript:void(0)">产品特点</a>
+					</li>
+					<li>
+						<div class="hover"></div>
+						<a href="aboutus.html">关于我们</a>					
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" id="navToggle">
+	            <span></span>
+	        </a>
+		</div>
+	</header>
+	<!--移动端的导航-->
+	<div class="m_nav">
+		<div class="top clearfix">
+			<img src="image/closed.png" alt="" class="closed" />
+		</div>
+		<div class="logo">
+			<img src="image/logo.png" alt="" />
+		</div>
+		<ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="product.html">产品优势</a>
+			</li>
+			<li>
+				<a class="yellow" href="javascript:void(0)">产品特点</a>
+			</li>
+			<li>
+				<a href="aboutus.html">关于我们</a>					
+			</li>
+		</ul>
+	</div>
+	<!-- 内容 -->
+    <div id="index_main" class="index_main">
+    	<!--导航-->
+        <div class="section section1">
+            <div class="container">
+				<div class="text animated">
+					<div class="toptext">
+						<span class="bg">洞悉</span>
+						行业发展趋势
+					</div>
+					<div class="sectext">分析市场发展需求</div>
+					<div class="english">MARKET DEMAND</div>
+					<div class="bottomtext">从而不断的<span>创新优化</span>功能</div>
+				</div>
+        	</div>
+        </div>
+        <div class="section section2">
+        	<div class="container">
+				<div class="text animated">
+					<h1>无限级推广返佣模式</h1>
+					<div class="line"></div>
+					<p>裂变式传播模式，会员人数几何增长，<span class="yellow">带来更多盈利。</span></p>
+				</div>
+        	</div>
+        </div>
+        <div class="section section3">
+        	<div class="container">
+				<div class="text animated">
+					<h1>全方位数据中心</h1>
+					<div class="line"></div>
+					<p>可视化数据中心，运营信息一目了然</p>
+				</div>
+				<div class="dataimg animated slow">
+					<img src="image/img_td_1.png" />
+				</div>
+        	</div>
+        </div>
+        <div class="section section4">
+        	<div class="container">
+				<div class="text animated">
+					<h1>火爆丰富的优惠活动</h1>
+					<div class="line"></div>
+					<p>拥有比同行业更为丰富、更大力度的优惠，增加玩家对游戏的热情和粘度。</p>
+				</div>
+				<div class="platformimg animated slow">
+					<div class="platformbox">
+						<img class="center" src="image/img_td_2.png" />
+						<div class="floatimg">
+							<img class="redbag animated slow" src="image/img_td_3.png" />
+							<img class="activity animated slower" src="image/img_td_4.png" />
+							<img class="yongjin animated slow" src="image/img_td_5.png" />
+							<img class="selfhelp animated slower" src="image/img_td_6.png" />
+							<img class="luckdraw animated slow" src="image/img_td_7.png" />
+							<img class="backwater animated slow" src="image/img_td_8.png" />
+							<img class="register animated slower" src="image/img_td_9.png" />
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+		<!--最后一屏-->
+		<div class="section section5">
+			<div class="container">
+				<div class="text animated">
+					<h1>多个终端统一管理</h1>
+					<div class="line"></div>
+					<p>iOS/安卓App、WAP、PC等多个终端，统一进行管理维护，站点维护方便</p>
+					<p class="yellow">玩家在一个终端注册账号，在所有终端都能使用。</p>
+				</div>
+				<div class="platformimg animated slow">
+					<img src="image/img_td_10.png" />
+				</div>
+			</div>
+		</div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/peculiarity.js"></script>
+	
+</body>
+</html>

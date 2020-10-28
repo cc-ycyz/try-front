@@ -1,0 +1,306 @@
+.index_main .section1{
+    position: relative;
+    width: 100%;
+	height: 100%;
+	background: url(../image/img_td_banner.png) no-repeat center; 
+    background-size: cover;
+}
+.index_main .section2{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_td_bg1.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section3{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_td_bg2.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section4{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_td_bg3.png) no-repeat center;
+	background-size: cover;
+}
+.index_main .section5{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_td_bg4.png) no-repeat center;
+	background-size: cover;
+}
+.section .container .text .line{
+    width: 14vw;
+}
+.section .container .text h1{
+    font-size: 48px;
+}
+.section .container .text p{
+    font-family: PingFangSC-Light;
+    font-size: 34px;
+}
+/*第一屏*/
+.section1 .text {
+    text-align: left;
+    color: #9ad6eb;
+}
+.section1 .text .toptext{
+    display: inline;
+    font-family: PingFangSC-Regular;
+	font-size: 68px;
+	line-height: 2.5;
+	letter-spacing: 5px;
+	color: #50dfff;
+    border-top: 4px solid #0ecdf7;
+    border-bottom: 4px solid #0ecdf7;
+}
+.section1 .text .toptext span.bg{
+    padding: 0 20px;
+    color: #fff;
+    background-color: #0ecdf7;
+}
+.section1 .text .sectext{
+    display: inline-block;
+    font-size: 68px;
+    line-height: 1.5;
+    border-bottom: 2px solid #9ad6eb;    
+}
+.section1 .text .english{
+    font-size: 40px;
+    line-height: 2;
+}
+.section1 .text .bottomtext{
+    font-size: 82px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.section1 .text .bottomtext span{
+    color: #fa325a;
+}
+/*第二屏*/
+.section2 .container .text .line{
+    margin: 5vh auto 3vh;
+    width: 14vw;
+}
+/*第三屏*/
+.section3 .container .dataimg{
+    display: none;
+    padding: 2vh 0 0;
+    margin: 0 auto;
+    height: 55vh;
+}
+.section3 .container .dataimg img{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+/*第四屏*/
+.section4 .container .platformimg{
+    display: none;
+    position: relative;
+    padding: 2vh 0 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 40vh;
+}
+.section4 .platformimg img.center{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.platformimg .floatimg img{
+    display: block;
+    position: absolute;
+    width: 6vw;
+}
+.platformimg .floatimg img.redbag{
+    top: 2vw;
+    left: -10vw;
+    
+}
+.platformimg .floatimg img.activity{
+    width: 8vw;
+    bottom: 5vw;
+    right: -10vw;
+}
+.platformimg .floatimg img.yongjin{
+    width: 10vw;
+    right: -5vw;
+    bottom: -4vw;
+}
+.platformimg .floatimg img.selfhelp{
+    width: 10vw;
+    bottom: 4vw;
+    left: -13vw;
+}
+.platformimg .floatimg img.luckdraw{
+    width: 8vw;
+    bottom: -7vw;
+    left: 0;
+}
+.platformimg .floatimg img.backwater{
+    width: 10vw;
+    top: 5vw;
+    right: -8vw;
+}
+.platformimg .floatimg img.register{
+    width: 7vw;
+    left: 15vw;
+    bottom: -7vw;
+}
+/*5*/
+.section5 .container .platformimg{
+    display: none;
+    position: relative;
+    margin: 2vw auto 0;
+    width: 60%;
+}
+.section5 .platformimg img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+@media only screen and (max-width: 1440px){
+	.section .container .text h1{
+		font-size: 42px;
+	}
+	.section .container .text p{
+		font-size: 28px;
+    }
+    .section5 .container .platformimg{
+        width: 55%;
+        height: 50vh;
+    }
+}
+@media only screen and (max-width: 992px){
+    .section .container .text p{
+        font-size: 30px;
+    }
+    .section1 .text .toptext{
+        font-size: 48px;
+    }
+    .section1 .text .toptext span.bg{
+        padding: 0 10px
+    }
+    .section1 .text .sectext{
+        font-size: 48px;
+    }
+    .section1 .text .english{
+        font-size: 26px;
+    }
+    .section1 .text .bottomtext{
+        font-size: 56px
+    }
+    .section3 .container .dataimg{
+        max-height: 55vh;
+    }
+}
+@media only screen and (max-width: 767px){
+    .section1 .text .toptext{
+        font-size: 28px;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        letter-spacing:2px;
+    }
+    .section1 .text .toptext span.bg{
+        padding: 0 10px
+    }
+    .section1 .text .sectext{
+        font-size: 28px;
+        border-bottom-width: 1px;
+    }
+    .section1 .text .english{
+        font-size: 20px;
+    }
+    .section1 .text .bottomtext{
+        font-size: 30px
+    }
+    .section .container .text h1{
+        font-size: 32px
+    }
+    .section .container .text p{
+        font-size: 18px;
+    }
+    .section2 .container .text .line{
+        height: 2px;
+        width: 50vw;
+    }
+    .section3 .container .dataimg{
+        width: 100%;
+        height: auto;
+    }
+    .section3 .container .dataimg img{
+        width: 100%
+    }
+    .section4 .container .platformimg{
+        margin-top: 5vw;
+        width: 75vw;
+        height: 85vw;
+    }
+    .section4 .container .platformimg .platformbox{
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+    .section4 .container .platformimg .platformbox img{
+        height: auto;
+    }
+    .platformimg .floatimg img.redbag{
+        top: 30vw;
+        left: -10vw;
+    }
+    .platformimg .floatimg img.selfhelp{
+        left: -6vw;
+        bottom: -5vw;
+        width: 28vw;
+    }
+    .platformimg .floatimg img.register{
+        width: 22vw;
+        left: 26vw;
+        bottom: -9vw;
+    }
+    .platformimg .floatimg img.yongjin{
+        width: 30vw;
+    }
+    .platformimg .floatimg img.activity{
+        width: 18vw;
+        top: 1vw;
+        left: 0;
+    }
+    .platformimg .floatimg img.luckdraw{
+        width: 22vw;
+        top: -1vw;
+        left: 24vw
+    }
+    .platformimg .floatimg img.backwater {
+        width: 30vw;
+        top: 9vw;
+    }
+    .platformimg .floatimg img{
+        width: 15vw
+    }
+    .section5 .container .platformimg{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 340px){
+    .section .container .text h1{
+        font-size: 22px
+    }
+    .section .container .text p{
+        font-size: 12px;
+    }
+    .section1 .text .toptext{
+        font-size: 24px;
+    }
+    .section1 .text .sectext{
+        font-size: 24px;
+    }
+    .section1 .text .english{
+        font-size: 18px;
+    }
+    .section1 .text .bottomtext{
+        font-size: 26px
+    }
+}

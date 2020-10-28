@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="google" content="notranslate" />
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>YOYOGAMING</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">	
+	<link rel="stylesheet" href="css/fullpage.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+		function getImgLink(name){
+			var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+			if(arr=document.cookie.match(reg))
+				return unescape(arr[2]);
+			else
+				return null;
+		}
+		var imgLink = getImgLink('language') || 'en';
+	</script>
+</head>
+<body>
+	<!--loading-->
+	<div class="loading">
+		<img class="img" src="images/loading.gif" alt="">
+	</div>
+	<div class="nav">
+		<a class="logo" href="/"><img src="./images/logo.png" alt=""></a>
+		<img class="menu-btn" src="./images/wap/wap_dh_icon.png" alt="">
+		<ul class="nav-list">
+			<li class="nav-item home active"><a class="link jump" href="/" i18n-content="home"></a></li>
+			<li class="nav-item introduction">
+				<a class="link arrow" href="javascript:;" i18n-content="introduction"></a>
+				<ul class="dropdown-menu">
+					<li><a class="jump" href="./cashnet.html" i18n-content="Cashnet"></a></li>
+					<li><a class="jump" href="./chess.html" i18n-content="yoyoCard"></a></li>
+				</ul>
+			</li>
+			<li class="nav-item contentus">
+				<a class="pcimg link" href="contentus.html" i18n-content="contentus"></a>
+				<a class="jump wapimg link" href="#contact" i18n-content="contentus"></a>
+			</li>
+			<li class="nav-item lang">
+				<a class="link arrow" href="javascript:;" i18n-content="lang"></a>
+				<ul class="dropdown-menu" id="check-language">
+					<li class="lang-en active" data-lang="en">English</li>
+					<li class="lang-tc" data-lang="tc">新加坡</li>
+					<li class="lang-vi" data-lang="vi">Việt Ngữ</li>
+					<li class="lang-th" data-lang="th">ไทย</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- <div class="foot">
+		<a class="logo" href="/">YOYOGAMING</a>
+	</div> -->
+	<!-- <div class="controlBtn delay-1_5s">
+		<div class="buttonTop"></div>
+		<div class="buttonBto"></div>
+	</div> -->
+	<!-- 内容 -->
+    <div id="index_main" class="index_main">
+        <div class="section section1">
+			<div class="swiper-container indexSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<script>
+							document.write('<img class="banner pcimg" src="./images/pc/banner/pc_banner1_'+imgLink+'.png" />')
+							document.write('<img class="banner wapimg" src="./images/wap/banner/wap_banner1_'+imgLink+'.png" />')
+						</script>
+					</div>
+					<div class="swiper-slide">
+						<script>
+							document.write('<img class="banner pcimg" src="./images/pc/banner/pc_banner2_'+imgLink+'.png" />')
+							document.write('<img class="banner wapimg" src="./images/wap/banner/wap_banner2_'+imgLink+'.png" />')
+						</script>
+					</div>
+				</div>
+				<!-- 分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+        </div>
+        <div class="section section2">
+			<div class="title commeTit animated delay-0_2s">
+				<h1 i18n-content="Cashnet"></h1>
+				<p i18n-content="CashnetApp"></p>
+			</div>
+			<div class="container cashnet clearfix">
+				<div class="game">
+					<div class="game-item lottery animated delay-0_2s" i18n-content="lottery"></div>
+					<div class="game-item sports animated delay-0_4s" i18n-content="sports"></div>
+					<div class="game-item chess animated delay-0_6s" i18n-content="chess"></div>
+					<div class="game-item fish animated delay-0_8s" i18n-content="fish"></div>
+					<div class="game-item electronics animated delay-1s" i18n-content="electronics"></div>
+					<div class="game-item live animated delay-1_2s" i18n-content="live"></div>
+				</div>
+				<div class="img-box">
+					<img class="mac animated delay-0_5s" src="./images/pc/yj_xjw_mac.png" alt="">
+					<script>
+						var imgLinks;
+							if(imgLink == 'zh' || imgLink == 'tc'){
+								imgLinks = 'zh'
+							}else{
+								imgLinks = 'en'
+							}
+							document.write('<img class="iphone animated delay-0_2s" src="./images/pc/yj_xjw_iPhone_'+imgLinks+'.png" alt="">')
+					</script>
+				</div>
+			</div>
+			<div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="https://yoyo888.cc/wap#/" i18n-content="tryplay" class="try-btn"></a>
+				<a target="_blank" href="https://yoyo888.cc/wap#/download" i18n-content="downloadapp" class="try-btn"></a>
+			</div>
+		</div>
+		<div class="section section3">
+			<div class="title commeTit animated delay-0_2s">
+				<h1 i18n-content="yoyoCard"></h1>
+				<p i18n-content="yoyoCardTip"></p>
+			</div>
+			<div class="container yoyoCard clearfix">
+				<div class="game">
+					<div class="game-item fish animated delay-0_2s" i18n-content="fish"></div>
+					<div class="game-item chess animated delay-0_4s" i18n-content="chess"></div>
+					<div class="game-item electronics animated delay-0_6s" i18n-content="electronics"></div>
+				</div>
+				<div class="img-box">
+					<div class="terminal">
+						<script>
+							var imgLinks;
+							if(imgLink == 'zh' || imgLink == 'tc'){
+								imgLinks = 'zh'
+							}else{
+								imgLinks = 'en'
+							}
+							document.write('<img class="agency animated delay-0_2s" src="./images/qp/qp_img4_'+imgLinks+'.png" alt="">')
+							document.write('<img class="game animated delay-0_4s" src="./images/qp/qp_img1_'+imgLinks+'.png" alt="">')
+							document.write('<img class="phone-a animated delay-0_6s" src="./images/qp/qp_img2_'+imgLinks+'.png" alt="">')
+							document.write('<img class="mac animated delay-0_8s" src="./images/qp/qp_img5_'+imgLinks+'.png" alt="">')
+							document.write('<img class="phone-b animated delay-1s" src="./images/qp/qp_img3_'+imgLinks+'.png" alt="">')
+						</script>
+					</div>
+					<div class="reflection">
+						<img class="agency animated delay-0_6s" src="./images/qp/qp_img4_dy.png" alt="">
+						<img class="phone-b animated delay-1_4s" src="./images/qp/qp_img3_dy.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-btn animated delay-0_4s">
+				<a target="_blank" href="https://www.yoyo888.net" i18n-content="tryplay" class="try-btn"></a>
+				<a target="_blank" href="http://eg-app.sx5r.cn/rrr/" i18n-content="downloadapp" class="try-btn"></a>
+			</div>
+		</div>
+		<div class="section section4">
+			<div class="title commeTit animated delay-0_2s">
+				<h1 i18n-content="advantage"></h1>
+			</div>
+			<div class="container">
+				<ul class="list">
+					<li class="list-item animated delay-0_2s">
+						<div class="img">
+							<img src="./images/pc/ys_icon_1.png" alt="">
+						</div>
+						<div class="wapflex">
+							<div class="title" i18n-content="team"></div>
+							<div class="content" i18n-content="teams"></div>
+						</div>
+					</li>
+					<li class="list-item animated delay-0_4s">
+						<div class="img">
+							<img src="./images/pc/ys_icon_2.png" alt="">
+						</div>
+						<div class="wapflex">
+							<div class="title" i18n-content="product"></div>
+							<div class="content" i18n-content="products"></div>
+						</div>
+					</li>
+					<li class="list-item animated delay-0_6s">
+						<div class="img">
+							<img src="./images/pc/ys_icon_3.png" alt="">
+						</div>
+						<div class="wapflex">
+							<div class="title" i18n-content="service"></div>
+							<div class="content" i18n-content="services"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section section5">
+			<div class="contact">
+				<div class="title commeTit animated delay-0_2s" i18n-content="contentus"></div>
+				<div class="line animated delay-0_5s"></div>
+				<div class="info">
+					<div class="info-item cashnet">
+						<div class="title animated delay-0_2s" i18n-content="Cashnet"></div>
+						<div class="info-list animated delay-0_4s">
+							<img src="./images/pc/lxwm_icon_phone.png" alt="">
+							<div class="name">Phone:</div>
+							<div class="text">
+								<p><a href="tel:+855 883764888">+855 883764888</a></p>
+							</div>
+						</div>
+						<div class="info-list animated delay-0_6s">
+							<img src="./images/pc/lxwm_icon_skype.png" alt="">
+							<div class="name">Skype:</div>
+							<div class="text">
+								<p><a href="skype:live:.cid.7d30517cc988bf2a?chat">yoyo888cc@gmail.com</a></p>
+							</div>
+						</div>
+						<div class="info-list animated delay-0_8s">
+							<img src="./images/pc/lxwm_icon_telegram.png" alt="">
+							<div class="name">Telegram:</div>
+							<div class="text">+855 883764888</div>
+						</div>
+						<div class="info-list animated delay-1s">
+							<img src="./images/pc/lxwm_icon_whats.png" alt="">
+							<div class="name">Whatsapp:</div>
+							<div class="text">
+								<p><a target="_blank" href="https://wa.me/855883764888">+855 883764888</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="info-item chess">
+						<div class="title animated delay-0_2s" i18n-content="yoyoCard"></div>
+						<div class="info-list animated delay-0_4s">
+							<img src="./images/pc/lxwm_icon_phone.png" alt="">
+							<div class="name">Phone:</div>
+							<div class="text">
+								<p><a href="tel:+855 887423888">+855 887423888</a></p>
+							</div>
+						</div>
+						<div class="info-list animated delay-0_6s">
+							<img src="./images/pc/lxwm_icon_skype.png" alt="">
+							<div class="name">Skype:</div>
+							<div class="text">
+								<p><a href="skype:live:.cid.d605010749de5b6c?chat">yygpoker@gmail.com</a></p>
+							</div>
+						</div>
+						<div class="info-list animated delay-0_8s">
+							<img src="./images/pc/lxwm_icon_telegram.png" alt="">
+							<div class="name">Telegram:</div>
+							<div class="text">+855 887423888</div>
+						</div>
+						<div class="info-list animated delay-1s">
+							<img src="./images/pc/lxwm_icon_whats.png" alt="">
+							<div class="name">Whatsapp:</div>
+							<div class="text">
+								<p><a target="_blank" target="_blank" href="https://wa.me/855887423888" target="_blank">+855 887423888</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--弹框-->
+	<div class="popkart" id="popkart">
+		<div class="popkart-box">
+			<div class="title">
+				<div i18n-content="noticeTitle"></div>
+				<div class="close"></div>
+			</div>
+			<div class="popkart-content">
+				<div i18n-content="noticeText"></div>
+				<div class="blue" i18n-content="noticeTextb"></div>
+				<div class="contact">
+					<div class="info-item cashnet clearfix">
+						<div class="tit" i18n-content="Cashnet"></div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_phone.png" alt="">
+							<div class="text">
+								<p><a href="tel:+855 883764888">+855 883764888</a></p>
+							</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_skype.png" alt="">
+							<div class="text">
+								<p><a href="skype:live:.cid.7d30517cc988bf2a?chat">yoyo888cc@gmail.com</a></p>
+							</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_telegram.png" alt="">
+							<div class="text">+855 883764888</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_whats.png" alt="">
+							<div class="text">
+								<p><a target="_blank" href="https://wa.me/855883764888">+855 883764888</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="info-item yoyoCard clearfix">
+						<div class="tit" i18n-content="yoyoCard"></div>
+						<div class="info-list first-child">
+							<img src="./images/wap/wap_tc_icon_phone.png" alt="">
+							<div class="text">
+								<p><a href="tel:+855 887423888">+855 887423888</a></p>
+							</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_skype.png" alt="">
+							<div class="text">
+								<p><a href="skype:live:.cid.d605010749de5b6c?chat">yygpoker@gmail.com</a></p>
+							</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_telegram.png" alt="">
+							<div class="text">+855 887423888</div>
+						</div>
+						<div class="info-list">
+							<img src="./images/wap/wap_tc_icon_whats.png" alt="">
+							<div class="text">
+								<p><a target="_blank" href="https://wa.me/855887423888" target="_blank">+855 887423888</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/flexible.js"></script>
+	<script src="./js/jquery.fullPage.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./lib/i18ns/di18n.min.js"></script>
+    <script src="./lib/i18ns/en.js"></script>
+	<script src="./lib/i18ns/zh.js"></script>
+	<script src="./lib/i18ns/tc.js"></script>
+	<script src="./lib/i18ns/vi.js"></script>
+	<script src="./lib/i18ns/th.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/index.js"></script>
+	
+</body>
+</html>

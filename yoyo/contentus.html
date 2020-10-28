@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="google" content="notranslate" />
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title i18n-content="contentus"></title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!--loading-->
+	<div class="loading">
+		<img class="img" src="images/loading.gif" alt="">
+	</div>
+	<div class="nav">
+		<a class="logo" href="/"><img src="./images/logo.png" alt=""></a>
+		<img class="menu-btn" src="./images/wap/wap_dh_icon.png" alt="">
+		<ul class="nav-list">
+			<li class="nav-item home"><a class="link jump" href="/" i18n-content="home"></a></li>
+			<li class="nav-item introduction">
+				<a class="link arrow" href="javascript:;" i18n-content="introduction"></a>
+				<ul class="dropdown-menu">
+					<li><a class="jump" href="./cashnet.html" i18n-content="Cashnet"></a></li>
+					<li><a class="jump" href="./chess.html" i18n-content="yoyoCard"></a></li>
+				</ul>
+			</li>
+			<li class="nav-item contentus active">
+				<a class="pcimg link" href="contentus.html" i18n-content="contentus"></a>
+				<a class="jump wapimg link" href="/#contact" i18n-content="contentus"></a>
+			</li>
+			<li class="nav-item lang">
+				<a class="link arrow" href="javascript:;" i18n-content="lang"></a>
+				<ul class="dropdown-menu" id="check-language">
+					<li class="lang-en active" data-lang="en">English</li>
+					<li class="lang-tc" data-lang="tc">新加坡</li>
+					<li class="lang-vi" data-lang="vi">Việt Ngữ</li>
+					<li class="lang-th" data-lang="th">ไทย</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="foot">
+		<a class="logo" href="./index.html"><img src="./images/logo.png" alt=""></a>
+	</div>
+	<!-- <div class="controlBtn delay-1_5s">
+		<div class="buttonTop"></div>
+		<div class="buttonBto"></div>
+	</div> -->
+	<!-- 内容 -->
+    <div class="contact-box d-flex align-center">
+		<div class="flex-table">
+			<div class="contact-tit" i18n-content="contentus"></div>
+			<div class="line"></div>
+			<div class="info-item cashnet clearfix">
+				<div class="title" i18n-content="Cashnet"></div>
+				<div class="info-list animated delay-0_4s">
+					<img src="./images/pc/lxwm_icon_phone.png" alt="">
+					<div class="text">
+						<p><a href="tel:+855 883764888">+855 883764888</a></p>
+					</div>
+				</div>
+				<div class="info-list animated delay-0_6s">
+					<img src="./images/pc/lxwm_icon_skype.png" alt="">
+					<div class="text">
+						<p><a href="skype:live:.cid.7d30517cc988bf2a?chat">yoyo888cc@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="info-list animated delay-0_8s">
+					<img src="./images/pc/lxwm_icon_telegram.png" alt="">
+					<div class="text">+855 883764888</div>
+				</div>
+				<div class="info-list animated delay-1s">
+					<img src="./images/pc/lxwm_icon_whats.png" alt="">
+					<div class="text">
+						<p><a target="_blank" href="https://wa.me/855883764888">+855 883764888</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-line"></div>
+			<div class="info-item chess clearfix">
+				<div class="title" i18n-content="yoyoCard"></div>
+				<div class="info-list animated delay-0_4s">
+					<img src="./images/pc/lxwm_icon_phone.png" alt="">
+					<div class="text">
+						<p><a href="tel:+855 887423888">+855 887423888</a></p>
+					</div>
+				</div>
+				<div class="info-list animated delay-0_6s">
+					<img src="./images/pc/lxwm_icon_skype.png" alt="">
+					<div class="text">
+						<p><a href="skype:live:.cid.d605010749de5b6c?chat">yygpoker@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="info-list animated delay-0_8s">
+					<img src="./images/pc/lxwm_icon_telegram.png" alt="">
+					<div class="text">+855 887423888</div>
+				</div>
+				<div class="info-list animated delay-1s">
+					<img src="./images/pc/lxwm_icon_whats.png" alt="">
+					<div class="text">
+						<p><a target="_blank" href="https://wa.me/855887423888" target="_blank">+855 887423888</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/flexible.js"></script>
+	<script src="./lib/i18ns/di18n.min.js"></script>
+    <script src="./lib/i18ns/en.js"></script>
+	<script src="./lib/i18ns/zh.js"></script>
+	<script src="./lib/i18ns/tc.js"></script>
+	<script src="./lib/i18ns/vi.js"></script>
+	<script src="./lib/i18ns/th.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

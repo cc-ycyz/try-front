@@ -1,0 +1,98 @@
+.pk-information .nav-tabs li {
+  margin: 0;
+  font-size: 18px;
+}
+.pk-information .nav-tabs li a {
+  margin: 0;
+  width: 120px;
+  height: 70px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: normal;
+  border: 0;
+  color: #666666;
+}
+.pk-information .nav-tabs li.active a {
+  position: relative;
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5985f7;
+}
+.pk-information .nav-tabs li.active a::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  margin-left: -50px;
+  width: 100px;
+  height: 3px;
+  background-color: #5985f7;
+}
+.pk-information .pk-pass-tab .tab-pane {
+  padding: 30px 25px;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-head {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f5f6fa;
+  border-bottom: 1px solid #e8e8e8;
+  color: #111111;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-head .pk-table-th {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-head .pk-table-th::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #d7d6d6;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-head .pk-table-th:last-child::before {
+  width: 0;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-cent .pk-table-tr {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #e8e8e8;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-cent .pk-table-tr .pk-table-td {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-cent .pk-table-tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-cent .pk-table-tr:hover {
+  background-color: #f2f6ff;
+}
+.pk-information .pk-pass-tab .tab-pane .pk-table .pk-table-more a {
+  display: block;
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #d4d4d4;
+}

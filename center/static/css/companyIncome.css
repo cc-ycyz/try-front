@@ -1,0 +1,498 @@
+[v-cloak] {
+  display: none;
+}
+.pk-money-box {
+  width: 788px;
+  background: #fff;
+}
+.pk-money-box ul {
+  padding: 0;
+  margin: 0;
+}
+.pk-money-box ul li {
+  list-style: none;
+}
+.pk-money-box a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.pk-money-box .tabs {
+  padding: 0 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.pk-money-box .tabs li {
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+}
+.pk-money-box .tabs li a {
+  color: #666666;
+  font-size: 18px;
+  font-weight: normal;
+}
+.pk-money-box .tabs li.active a {
+  color: #5985f7;
+}
+.pk-money-box .tabs li.active::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #5985f7;
+  bottom: 0;
+  left: 0;
+}
+.pk-money-box .pk-income-content {
+  padding: 0 12px;
+}
+.pk-money-box .pk-income-title {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #111111;
+  margin-bottom: 15px;
+}
+.pk-money-box .pk-income-banklist li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 44px;
+  line-height: 44px;
+  background-color: #f5f5f5;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #f5f5f5;
+  position: relative;
+}
+.pk-money-box .pk-income-banklist li:nth-child(5n) {
+  margin-right: 0;
+}
+.pk-money-box .pk-income-banklist li a {
+  display: block;
+}
+.pk-money-box .pk-income-banklist li a img {
+  width: 100%;
+  display: block;
+}
+.pk-money-box .pk-income-banklist li i {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  font-size: 26px;
+  color: #4d83de;
+  z-index: 1;
+  display: none;
+}
+.pk-money-box .pk-income-banklist li.active {
+  border: 2px solid #4d83de;
+}
+.pk-money-box .pk-income-banklist li.active i {
+  display: block;
+}
+.pk-money-box .pk-income-banklist .pk-bankList-more {
+  border: 2px solid #f5f5f5;
+  width: 136px;
+  height: 44px;
+  line-height: 44px;
+  background-color: #f5f5f5;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.pk-money-box .pk-income-banklist .pk-bankList-more a {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #4d83de;
+}
+.pk-money-box .pk-online-income-banklist li {
+  height: 74px;
+}
+.pk-money-box .pk-online-income-banklist li a p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #686868;
+  position: relative;
+}
+.pk-money-box .pk-online-income-banklist li a p::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -50px;
+}
+.pk-money-box .pk-online-income-banklist .pk-bankList-more {
+  height: 74px;
+  line-height: 74px;
+}
+.pk-money-box .pk-online-income-banklist .pk-bankList-more a {
+  height: 74px;
+  line-height: 74px;
+}
+.pk-money-box .pk-bankItem-details-qrcode p {
+  margin-bottom: 0;
+}
+.pk-money-box .pk-bankItem-details-qrcode .pk-hint {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #fe8c27;
+}
+.pk-money-box .pk-bankItem-details {
+  background-color: #f5f6fa;
+  border: solid 1px #e8ecef;
+  padding: 16px 20px;
+}
+.pk-money-box .pk-bankItem-details ul {
+  float: left;
+}
+.pk-money-box .pk-bankItem-details ul li span {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+}
+.pk-money-box .pk-bankItem-details ul li span i {
+  font-style: normal;
+}
+.pk-money-box .pk-bankItem-details ul li p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #000000;
+  display: inline-block;
+  margin-right: 10px;
+}
+.pk-money-box .pk-bankItem-details ul li .pk-copy {
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  background-color: #61d677;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.pk-money-box .pk-bankItem-details .pk-qrcode {
+  float: left;
+  margin-right: 20px;
+}
+.pk-money-box .pk-bankItem-details .pk-qrcode img {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+.pk-money-box .pk-help {
+  margin: 15px 0 28px;
+}
+.pk-money-box .pk-help p {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-money-box .pk-help p i {
+  font-size: 14px;
+  margin-right: 4px;
+  color: #fe8c27;
+}
+.pk-money-box .pk-help p a {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #fe8c27;
+  text-decoration: underline;
+}
+.pk-form .form-group {
+  margin-bottom: 30px;
+}
+.pk-form .form-group .col-sm-2 {
+  width: 120px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.pk-form .form-group .col-sm-offset-2 {
+  margin-left: 120px;
+}
+.pk-form .form-group .col-sm-5 {
+  padding-left: 0;
+}
+.pk-form .form-group .money {
+  position: relative;
+}
+.pk-form .form-group .money span {
+  position: absolute;
+  right: 0;
+}
+.pk-form .form-control {
+  height: 40px;
+  background: #fff;
+}
+.pk-form .input-group-addon:last-child {
+  background: #fff;
+}
+.pk-form .pk-money-hint {
+  padding: 0;
+}
+.pk-form .pk-submit-btn {
+  background-color: #5985f7;
+  box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+}
+.pk-form .form-control-static {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-warm-prompt {
+  background-color: #f5f6fa;
+  border: solid 1px #e8ecef;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+}
+.pk-warm-prompt h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-warm-prompt ul li {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #868686;
+  line-height: 24px;
+}
+.pk-income-help {
+  margin-top: 30px;
+  padding: 0 12px;
+}
+.pk-income-help p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.pk-income-help p span {
+  color: #ff0000;
+}
+.pk-income-help .pk-back-btn {
+  margin-top: 60px;
+  width: 120px;
+  height: 46px;
+  background-color: #5985f7;
+  box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 46px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.pk-income-success {
+  padding: 0 12px;
+}
+.pk-income-success .pk-income-success-info {
+  text-align: center;
+  padding-top: 96px;
+}
+.pk-income-success .pk-income-success-info i {
+  font-size: 90px;
+  color: #49c74e;
+}
+.pk-income-success .pk-income-success-info h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #111111;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+.pk-income-success .pk-income-success-info p {
+  font-size: 18px;
+  font-weight: 200;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+}
+.pk-income-success .pk-income-success-info .pk-btn {
+  margin-top: 54px;
+}
+.pk-income-success .pk-income-success-info .pk-btn .pk-btn-ok {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #5985f7;
+  box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: ‰ 22px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.pk-income-success .pk-income-success-info .pk-btn .pk-btn-ok a {
+  display: block;
+  color: #9198ad;
+}
+.pk-income-success .pk-income-success-info .pk-btn .pk-btn-record {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #5985f7;
+  box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: ‰ 22px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 16px 1px rgba(255, 255, 255, 0.63);
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  color: #9198ad;
+}
+.pk-income-success .pk-income-success-info .pk-btn .pk-btn-record a {
+  display: block;
+  color: #9198ad;
+}
+.pk-income-success .pk-income-success-details {
+  margin-top: 96px;
+  background-color: #f5f6fa;
+  border: solid 1px #e8ecef;
+  padding: 60px;
+}
+.pk-income-success .pk-income-success-details ul li {
+  text-align: center;
+}
+.pk-income-success .pk-income-success-details ul li p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #111111;
+  font-weight: 200;
+}
+.pk-income-success .pk-income-success-details ul li p b {
+  font-weight: 200;
+}
+.pk-income-success .pk-income-success-details ul li p:last-child {
+  color: #2b2b2b;
+  font-weight: normal;
+}
+.pk-income-success .pk-income-success-problem p {
+  margin-top: 94px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-income-success .pk-income-success-problem p a {
+  color: #4d83de;
+}
+.pk-income-success .pk-income-success-carousel {
+  margin-top: 30px;
+  margin-bottom: 48px;
+}
+.pk-income-success .pk-income-success-carousel .item {
+  width: 100%;
+  height: 168px;
+  cursor: pointer;
+}
+.pk-income-success .pk-income-success-carousel .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.pk-fast-money-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pk-fast-money-btn li {
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #5985f7;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #5985f7;
+  float: left;
+  margin-bottom: 12px;
+}
+.pk-fast-money-btn li:hover,
+.pk-fast-money-btn li.active {
+  background-color: #5985f7;
+  color: #fff;
+}

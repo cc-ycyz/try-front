@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN">
+
+<head>
+    <title>app游戏</title>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+</head>
+
+<body>
+    <!--123-->
+    <a href="javascript:;" id="download-a" class="download-a"></a>
+    <div class="download-content">
+        <div class="download-guide">
+            <img class="pointer" src="./img/2/icon_yind.png" class="img-resposive">
+            <img src="./img/2/nr.png" class="img-resposive">
+        </div>
+        <div class='download-inside'>
+        </div>
+        <div class='download-btn'>
+            <span>立即下载</span>
+            <img src="./img/2/button.png" class="img-resposive">
+        </div>
+
+        <!-- <div id="weixin_an">
+            <div class="click_opacity">
+            </div>
+            <div class="to_btn">
+                <span class="span1"><img src="./img/2/Dp_button.png"></span>
+                <span class="span2"><em>1</em> 点击右上角<img src="./menu.png">打开菜单</span>
+                <span class="span2"><em>2</em> 选择【在浏览器打开】进行下载</span>
+            </div>
+        </div> -->
+    </div>
+
+
+    <style>
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .download-content {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-resposive {
+            max-width: 100%;
+
+        }
+
+        .download-guide {
+            text-align: right;
+            margin-top:12%;
+            position: relative;
+            text-align: center;
+        }
+        .download-guide img{
+            width: 192px;
+            vertical-align: middle;
+        }
+
+        .download-guide img.pointer{
+            width: 43px;
+            height: 50px;
+            position: absolute;
+            right: 24px;
+            top: 0;
+        }
+       
+
+        .download-inside {
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .download-btn {
+            position: absolute;
+            bottom: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .download-btn span {
+            position: absolute;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 28px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .download-inside img {
+            margin: 0 auto;
+        }
+
+        .download-a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('./img/2/bg.png') no-repeat;
+            background-size: cover;
+        }
+
+        /* 遮罩   */
+        /* #weixin_an {
+            display: none;
+        } */
+
+        .click_opacity {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.6;
+            position: fixed;
+            z-index: 10000;
+            top: 0;
+        }
+
+        .to_btn {
+            color: #fff;
+        }
+
+        .to_btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            text-align: right;
+            z-index: 10001;
+            font-family: "Source Han Sans";
+            color: #fff;
+        }
+
+        .to_btn span {
+            display: block;
+            float: right;
+        }
+
+        .to_btn img {
+            width: 30%;
+            height: auto;
+            display: inline-block;
+        }
+
+        .to_btn .span1 {
+            font-size: 35px;
+            color: #fff;
+            margin-top: 5px;
+        }
+
+        .to_btn .span2 {
+            display: inline-block;
+            line-height: 60px;
+            width: 80%;
+            margin-bottom: 12px;
+            text-align: left;
+            font-size: 35px;
+        }
+
+        .to_btn .span2 em {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background: #009dd9;
+            color: #fff;
+            font-size: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            margin-right: 3px;
+        }
+
+        .to_btn .span2 img {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 0px 5px;
+        }
+    </style>
+    <script>
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent,
+                    app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        // get the current hash
+        var loc = window.location.toString();
+        var hashValue = "";
+        var ind = loc.indexOf("?");
+        if (ind > 0) {
+            hashValue = loc.substring(ind + 1);
+        }
+
+        var params = hashValue.split("&");
+        var queryStringList = [];
+
+        for (var i = 0; i < params.length; i++) {
+            var ind = params[i].indexOf("=");
+            if (ind > 0) {
+                queryStringList[params[i].substring(0, ind)] =
+                    decodeURIComponent(params[i].substring(ind + 1).replace(/\+/g, '%20'));
+            };
+        };
+        //var domainArr = [
+        //     "https://appdownload.pkcdns1.com",
+        //     "https://appdownload.pkcdns2.com",
+        //     "https://appdownload.pkcdns3.com",
+        //     "https://appdownload.pkcdns4.com",
+        // ];
+        //随机获取一个
+        // var domain = domainArr[Math.round(Math.random()*(3-0)+0)];
+        //console.log(domain);
+        var domain = document.location.protocol + "//" + window.location.host;
+        var site = queryStringList["s"];
+        var index = queryStringList["i"];
+        $(document).ready(function () {
+            // if (browser.versions.weixin && browser.versions.android) {
+            //     $('#weixin_an').show();
+            // } else {
+            //     $('#weixin_an').hide();
+            // }
+            $(".download-btn").click(function () {
+                if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+                    window.location.href = "itms-services://?action=download-manifest&url=" + domain +
+                        "/" + site + "_" + index + "/" + site + "_" + index + ".plist";
+                } else if (browser.versions.android) {
+                    window.location.href = domain + "/" + site + "_" + index + "/pkplus.apk";
+                } else {
+                    var isok = confirm("是否用电脑下载app？");
+                    if (isok) {
+                        window.open(domain + "/" + site + "_" + index + "/pkplus.apk");
+                    } else {
+                        return;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

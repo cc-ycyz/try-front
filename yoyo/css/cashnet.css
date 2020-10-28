@@ -1,0 +1,336 @@
+#fp-nav {
+  left: auto;
+  right: 4rem;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+#fp-nav ul li {
+  margin: 0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+}
+#fp-nav ul li a span,
+#fp-nav ul li:hover a span {
+  box-sizing: border-box;
+  margin: -0.825rem 0 0 -0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  background: none;
+  border: solid 0.203rem #92703c;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+  margin: -0.825rem 0 0 -0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  background-color: #c49751;
+  border-color: #c49751;
+}
+.section {
+  background: url("../images/pc/zym_qp_2_bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.section .bottom-btn {
+  display: none;
+  position: static;
+  margin: 2vw auto 0;
+  text-align: center;
+}
+.section .bottom-btn .try-btn {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  font-size: 2.26rem;
+  text-align: center;
+  line-height: 2.26rem;
+  color: #c49751;
+  border: solid 0.136rem #c49751;
+}
+.section .bottom-btn .try-btn:hover {
+  text-decoration: none;
+}
+.section1 {
+  background: url("../images/pc/zym_qp_1_bj.jpg") no-repeat center;
+  background-size: cover;
+}
+.section1 .text-img {
+  text-align: center;
+}
+.section1 .text-img img {
+  display: none;
+  margin: 0 auto;
+  width: 42rem;
+}
+.section1 .text-img img.th,
+.section1 .text-img img.vi,
+.section1 .text-img img.en {
+  width: 50rem;
+}
+.section1 .text-img .content {
+  display: none;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  width: 48.5vw;
+  font-size: 4.325rem;
+  line-height: 4.325rem;
+  color: #ffffff;
+}
+.section1 .text-img .content p {
+  background: linear-gradient(#faf0e1, #e0c999, #faf0e1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section1 .text-img .content p:first-child {
+  margin-bottom: 2.237rem;
+}
+.section1 .game-img {
+  position: relative;
+}
+.section1 .game-img img {
+  display: none;
+}
+.section1 .game-img .mac {
+  width: 35vw;
+}
+.section1 .game-img .ipad {
+  z-index: 1;
+  position: absolute;
+  bottom: -2vw;
+  left: -12vw;
+  width: 22vw;
+}
+.section1 .game-img .iphone {
+  z-index: 2;
+  position: absolute;
+  bottom: -1vw;
+  left: -1vw;
+  width: 12vw;
+}
+.section2 .fp-tableCell {
+  height: 100% !important;
+  overflow: hidden;
+}
+.section2 .slider-nav {
+  opacity: 0;
+  display: block;
+  margin: 3rem auto 0;
+  width: 48vw;
+}
+.section2 .slider-nav .slick-slide img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.section2 .slider-nav .slick-slide:focus {
+  outline: none;
+}
+.section2 .slider-nav .image {
+  padding: 1.8rem 1rem 1rem;
+  position: relative;
+  background: url("../images/cashnet/07_Computer_Xiao.png") no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: scale(0.85);
+  /*兼容-webkit-引擎浏览器*/
+  -moz-transform: scale(0.85);
+  /*兼容-moz-引擎浏览器*/
+  transform: scale(0.85);
+}
+.section2 .slider-nav .image .mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 27, 24, 0.8);
+  border-radius: 1.8rem;
+}
+.section2 .slider-nav .image .mask img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7.2%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+.section2 .slider-nav .image:hover .mask {
+  display: block;
+}
+.section2 .slider-nav .image.slick-active {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  animation: slickBig 2s ease alternate;
+}
+.section3 .phoneswiper {
+  margin-top: 3rem;
+  max-width: 120rem;
+}
+.section3 .phoneswiper img {
+  width: 100%;
+}
+.section3 .phoneswiper .swiper-slide {
+  transform: scale(0.8);
+}
+.section3 .phoneswiper .swiper-slide-active,
+.section3 .phoneswiper .swiper-slide-duplicate-active {
+  transform: scale(1);
+}
+.enlarge {
+  display: none;
+}
+.enlarge .slider-for {
+  z-index: 199;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.enlarge .slider-for .link {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enlarge .slider-for .link img {
+  width: 100%;
+  max-width: 1200px;
+}
+.enlarge .close {
+  z-index: 199;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../images/cashnet/07_Close.png") no-repeat;
+  background-size: 100%;
+}
+@media only screen and (max-width: 1080px) {
+  #fp-nav {
+    right: 0.3rem;
+    transform: translateY(-50%);
+    margin: 0 !important;
+  }
+  #fp-nav ul li {
+    margin: 0.04rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-bottom: 0.5rem;
+  }
+  #fp-nav ul li a span,
+  #fp-nav ul li:hover a span {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: none;
+    border: solid 0.04rem #92703c;
+  }
+  #fp-nav ul li a.active span,
+  #fp-nav ul li:hover a.active span {
+    margin: 0;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-color: #c49751;
+    border-color: #c49751;
+  }
+  .section {
+    background: url("../images/wap/qp/wap_zym_qp_1_bj.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .section .bottom-btn {
+    margin: 5.5vw auto 0;
+    padding: 0.25rem 0;
+  }
+  .section .bottom-btn .try-btn {
+    margin: 0 0.2rem;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.395rem;
+    line-height: 0.395rem;
+    border: solid 0.019rem #c49751;
+  }
+  .section1 {
+    background: url("../images/wap/qp/wap_zym_qp_2_bj.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .section1 .container {
+    flex-direction: column !important;
+  }
+  .section1 .container .text-img .title {
+    width: 48vw;
+  }
+  .section1 .container .text-img .title.th,
+  .section1 .container .text-img .title.vi,
+  .section1 .container .text-img .title.en {
+    width: 50vw;
+  }
+  .section1 .container .text-img .content {
+    margin: 0.5rem auto 0;
+    width: 96vw;
+    font-size: 0.65rem;
+  }
+  .section1 .container .text-img .content p {
+    margin-left: 25vw;
+    margin-bottom: 0.44rem;
+    line-height: 1rem;
+    text-align: left;
+  }
+  .section1 .container .game-img {
+    margin-top: 1rem;
+  }
+  .section1 .container .game-img .mac {
+    padding-left: 2rem;
+    width: 8rem;
+  }
+  .section1 .container .game-img .ipad {
+    bottom: -0.46rem;
+    left: -0.75rem;
+    width: 5rem;
+  }
+  .section1 .container .game-img .iphone {
+    bottom: -0.23rem;
+    left: 1.77rem;
+    width: 2.75rem;
+  }
+  .section1 .hang {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.29rem;
+    width: 0.89rem;
+  }
+  .section1 .hang img {
+    width: 100%;
+    height: 100%;
+  }
+  .section2 .slider-nav {
+    margin: 1rem auto 0;
+    width: 100%;
+  }
+  .section2 .slider-nav .image {
+    padding: 0.4rem 0.2rem 0.2rem;
+  }
+  .section2 .slider-nav .image .mask {
+    border-radius: 0.5rem;
+  }
+  .section3 .phoneswiper {
+    margin-top: 1rem;
+  }
+  .enlarge .close {
+    top: auto;
+    right: 50%;
+    bottom: 3rem;
+    transform: translateX(50%);
+    width: 1rem;
+    height: 1rem;
+  }
+}

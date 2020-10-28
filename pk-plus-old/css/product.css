@@ -1,0 +1,341 @@
+.index_main .section1{
+    position: relative;
+    width: 100%;
+	height: 100%;
+	background: url(../image/img_cpys_1_bg.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+.index_main .section2{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_cpys_2_bg.png) no-repeat;
+	background-size: cover;
+}
+.index_main .section3{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_cpys_3_bg.png) no-repeat;
+	background-size: cover;
+}
+.index_main .section4{
+	width: 100%;
+	height: 100%;
+	background: url(../image/img_cpys_4_bg.png) no-repeat;
+	background-size: cover;
+}
+/*第一屏*/
+.section1 .circular{
+    background-image: url("../image/img_cpys_1_ball.png");
+}
+.section .likeswitch{
+    z-index: 2;
+    position: absolute;
+    bottom: 25vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .likeswitch img{
+    width: 20vh;
+}
+.section .likeswitch.mouse{
+    bottom: 10vh;
+    margin-left: -1vh;
+}
+.section .likeswitch.mouse img{
+    width: 2.5vh;
+}
+.section1 .lefttop{
+    top: -20vh;
+    left: 10vw;
+    width: 12%;
+    background-image: url("../image/img_cpys_1_cm1.png");
+    background-size: 100%;
+}
+.section1 .righttop{
+    top: -25vh;
+    left: auto;
+    right: 22vw;
+    width: 8%;
+    background-image: url("../image/img_cpys_1_shaizi2.png");
+    background-size: 100%;  
+}
+.section1 .leftbottom{
+    top: auto;
+    bottom: 20vh;
+    left: 15vw;
+    width: 12vw;
+    height: 18vh;
+    background-image: url("../image/img_cpys_1_shaizi3.png");
+    background-size: 100%;  
+}
+.section1 .rightbottom{
+    top: auto;
+    bottom: 0;
+    left: 55vw;
+    width: 25vw;
+    height: 40vh;
+    background-image: url("../image/img_cpys_1_shaizi1.png");
+    background-size: 100%;  
+}
+/*第二屏*/
+.section2 .rectangle{
+    top: 5vw;
+    width: 70vw;
+    background-image: url("../image/img_cpys_2_txtbg.png");
+    background-size: 100%;
+}
+.section2 .rocket{
+    top: -5vw;
+    left: 54vw;
+    width: 14vw;
+    background-image: url("../image/img_cpys_2_hj.png");
+    background-size: 100%;
+}
+.section2 .phone{
+    top: 10vw;
+    left: auto;
+    right: 0;
+    width: 65vw;
+    background-image: url("../image/img_cpys_2_yj1.png");
+    background-size: 100%;
+}
+.section2 .phone .phonemid{
+    top: -3vw;
+    left: 25vw;
+    width: 32vw;
+    background-image: url(../image/img_cpys_2_yj2.png);
+    background-size: 100%;
+}
+.section2 .phone .phonetop{
+    top: -6vw;
+    left: 23vw;
+    width: 32vw;
+    background-image: url(../image/img_cpys_2_yj3.png);
+    background-size: 100%;
+}
+/*第三屏*/
+.section3 .lefttext p{
+    color: #efe9fe
+}
+.section3 .games{
+    display: none;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+.section3 .games img{
+    margin: 0 auto;
+    width: 80%;
+}
+.section3 .games img.big{
+    display: block;
+}
+.section3 .games img.small{
+    display: none;
+}
+/*第四屏*/
+.section4 .lefttext{
+    float: right;
+}
+.section4 .operation{
+    top: auto;
+    bottom: 0;
+    height: 80vh;
+    width: 60vw;
+    background-image: url(../image/img_cpys_4_ch.png);
+    background-size: 100%;
+}
+@media only screen and (max-width: 1440px){
+	.section2 .rectangle{
+        top: 5vw;
+        width: 58vw;
+    }
+    .section2 .rocket{
+        top: -5vw;
+        left: 45vw;
+        width: 14vw;
+    }
+    .section2 .phone{
+        top: 10vw;
+        left: auto;
+        right: 10vw;
+        width: 65vw;
+    }
+    .section2 .phone .phonemid{
+        top: -3vw;
+        left: 25vw;
+        width: 32vw;
+    }
+    .section2 .phone .phonetop{
+        top: -6vw;
+        left: 23vw;
+        width: 32vw;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .section1 .lefttop{
+        top: -25vh;
+        left: 2vw;
+        width: 16%;
+    }
+    .section1 .righttop{
+        top: -25vh;
+        right: 2vw;
+        width: 12%;
+    }
+    .section1 .leftbottom{
+        bottom: 8vh;
+        left: 12vw;
+        width: 14vw;
+        height: 18vh;
+    }
+    .section1 .rightbottom{
+        width: 30vw;
+        height: 30vh;
+    }
+    .section2 .rectangle{
+        width: 68vw;
+    }
+    .section2 .rocket{
+        left: 53vw;
+    }
+    .section2 .phone{
+        right: 0;
+    }
+}
+@media only screen and (max-width: 992px){
+    .container .text h1{
+        font-size: 50px
+    }
+    .container .lefttext h1{
+        font-size: 32px;
+    }
+    .section1 .lefttop{
+        top: -30vh;
+        left: 1vw;
+        width: 20%;
+    }
+    .section1 .righttop{
+        top: -30vh;
+        right: 1vw;
+        width: 15%;
+    }
+    .section1 .leftbottom{
+        left: 8vw;
+    }
+}
+@media only screen and (max-width: 767px){
+    .section1 .lefttop{
+        left: 0;
+        width: 25%;
+    }
+    .section1 .righttop{
+        right: 0;
+        width: 20%;
+    }
+    .section1 .leftbottom{
+        left: 0;
+        width: 25vw;
+        height: 30vh;
+    }
+    .section1 .rightbottom{
+        left: 35vw;
+        width: 60vw;
+        height: 40vh;
+    }
+    .section .lefttext .line{
+        width: 50vw;
+        height: 2px;
+    }
+    .section2 .container,.section4 .container{
+        height: 100vh;
+    }
+    .section2 .container .lefttext,
+    .section4 .container .lefttext{
+        position: absolute;
+        top: 40vw;
+    }
+    .section2 .lefttext h1{
+        font-size: 24px;
+    }
+    .section2 .lefttext p{
+        font-size: 14px;
+    }
+    .section2 .rectangle{
+        top: 15vw;
+        width: 100vw;
+        height: 100vw;
+        background-image: url("../image/img_cpys_2_txtbg2.png")
+    }
+    .section2 .rocket{
+        left: 15vw;
+        top: 20vw;
+        width: 32vw;
+    }
+    .section2 .phone{
+        z-index: 9;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vw;
+        background-size: 130%;
+    }
+    .section2 .phone .phonemid{
+        top: 3vw;
+        left: auto;
+        right: 3vw;
+        width: 65vw;
+        height: 80vw;
+    }
+    .section2 .phone .phonetop{
+        top: -4vw;
+        left: auto;
+        right: 10vw;
+        width: 65vw;
+        height: 80vw;
+    }
+    .section3 .container .lefttext h1{
+        font-size: 26px;
+    }
+    .section3 .games img.big{
+        display: none;
+    }
+    .section3 .games img.small{
+        display: block;
+        width: 100%;
+    }
+    .section3 .lefttext p{
+        font-size: 12px;
+    }
+    .section4 .operation{
+        width:100vw;
+        height: 100vw;
+    }
+}
+@media only screen and (max-width: 340px){
+    .section1 .lefttop{
+        left: -5vw;
+        width: 30%;
+    }
+    .section2 .container .lefttext{
+        position: absolute;
+        top: 35vw;
+    }
+    .section2 .lefttext h1{
+        font-size: 20px;
+    }
+    .section2 .lefttext p{
+        font-size: 12px;
+    }
+    .section3 .container .lefttext h1{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 320px){
+	
+}

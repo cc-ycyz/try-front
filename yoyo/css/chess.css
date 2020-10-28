@@ -1,0 +1,540 @@
+#fp-nav {
+  left: auto;
+  right: 4rem;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+#fp-nav ul li {
+  margin: 0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+}
+#fp-nav ul li a span,
+#fp-nav ul li:hover a span {
+  box-sizing: border-box;
+  margin: -0.825rem 0 0 -0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  background: none;
+  border: solid 0.203rem #92703c;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+  margin: -0.825rem 0 0 -0.825rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  background-color: #c49751;
+  border-color: #c49751;
+}
+.section {
+  background: url("../images/pc/zym_qp_2_bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.section .tits {
+  display: none;
+  text-align: center;
+}
+.section .tits h1 {
+  position: relative;
+  font-size: 3.616rem;
+  font-weight: bold;
+  line-height: 3.616rem;
+  color: #c49751;
+}
+.section .commetit {
+  display: none;
+}
+.section .img-box img {
+  display: none;
+}
+.section .function {
+  display: none;
+}
+.section .function .title {
+  margin-bottom: 4rem;
+  font-size: 2.8rem;
+  text-align: left;
+  font-weight: bold;
+  line-height: 2.8rem;
+  color: #f7f7f7;
+}
+.section .function .function-item {
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #c0c0c0;
+}
+.section .function .function-item .item-list {
+  flex: 1;
+  margin: 1.08rem 1.4vw 1.08rem 0;
+  padding-left: 4.22rem;
+  min-height: 3.262rem;
+}
+.section .function .function-item .item-list:nth-child(2n+1) {
+  min-width: 14rem;
+}
+.section .function .function-item .yes {
+  background: url("../images/pc/zym_qp_2_icon_d.png") no-repeat left center;
+  background-size: 3.942rem 3.262rem;
+}
+.section .function .function-item .no {
+  background: url("../images/pc/zym_qp_2_icon_c.png") no-repeat left center;
+  background-size: 3.126rem 2.786rem;
+}
+.section .bottom-btn {
+  display: none;
+  position: static;
+  margin: 5.5vw auto 0;
+  text-align: center;
+}
+.section .bottom-btn .try-btn {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  font-size: 2.26rem;
+  text-align: center;
+  line-height: 2.26rem;
+  color: #c49751;
+  border: solid 0.136rem #c49751;
+}
+.section .bottom-btn .try-btn:hover {
+  text-decoration: none;
+}
+.section1 {
+  padding-top: 4rem;
+  background: url("../images/pc/zym_qp_1_bj.jpg") no-repeat center;
+  background-size: cover;
+}
+.section1 .container .text-img {
+  text-align: center;
+}
+.section1 .container .text-img .title {
+  display: none;
+  margin: 0 auto 3.322rem;
+  width: 34.847rem;
+}
+.section1 .container .text-img .title.th,
+.section1 .container .text-img .title.vi,
+.section1 .container .text-img .title.en {
+  width: 50rem;
+}
+.section1 .container .text-img .content {
+  display: none;
+  box-sizing: border-box;
+  width: 48.5vw;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #ffffff;
+}
+.section1 .container .text-img .content p {
+  background: linear-gradient(#faf0e1, #e0c999, #faf0e1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section1 .container .text-img .content p:first-child {
+  margin-bottom: 2.237rem;
+}
+.section1 .container .game-img img {
+  display: none;
+}
+.section1 .container .game-img .top {
+  width: 30.625vw;
+}
+.section1 .container .game-img .item {
+  margin-top: 1.5vw;
+}
+.section1 .container .game-img .item img {
+  width: 15vw;
+}
+.section2 .container {
+  margin: 5rem auto 0;
+}
+.section2 .container .img-box {
+  position: relative;
+  padding: 0 1.4vw 6.35vw 1.04vw;
+  margin-right: 1.77vw;
+}
+.section2 .container .img-box .bottom {
+  width: 100%;
+}
+.section2 .container .img-box .center {
+  position: absolute;
+  top: 7.55vw;
+  left: 0;
+  width: 23.5vw;
+}
+.section2 .container .img-box .top {
+  position: absolute;
+  top: 4.9vw;
+  right: 0;
+  width: 9vw;
+}
+.section3 .container {
+  margin: 5rem auto 0;
+  width: 63vw;
+}
+.section3 .container .img-box {
+  position: relative;
+  padding-left: 4.53vw;
+  padding-bottom: 9.37vw;
+}
+.section3 .container .img-box .bottom {
+  width: 25.46vw;
+}
+.section3 .container .img-box .center {
+  position: absolute;
+  top: 8.8vw;
+  left: 0;
+  width: 26.77vw;
+}
+.section4 .item-list {
+  min-width: 14rem !important;
+}
+.section4 .container {
+  margin: 5rem auto 0;
+  width: 63vw;
+}
+.section4 .container .img-box {
+  position: relative;
+  padding-left: 4vw;
+  padding-bottom: 9.68vw;
+  margin-right: 1.97vw;
+}
+.section4 .container .img-box .bottom {
+  width: 25.31vw;
+}
+.section4 .container .img-box .center {
+  position: absolute;
+  top: 8.8vw;
+  left: 0;
+  width: 25.46vw;
+}
+.section5 .container {
+  margin: 5rem auto 0;
+  width: 63vw;
+}
+.section5 .container .img-box {
+  position: relative;
+  padding-left: 3.95vw;
+  padding-bottom: 10.36vw;
+}
+.section5 .container .img-box .bottom {
+  width: 25.46vw;
+}
+.section5 .container .img-box .center {
+  position: absolute;
+  top: 9.58vw;
+  left: 0;
+  width: 26.71vw;
+}
+.section6 .container {
+  margin: 5rem auto 0;
+  width: 63vw;
+}
+.section6 .container .img-box {
+  position: relative;
+  padding-left: 3.95vw;
+  padding-bottom: 10.36vw;
+  margin-right: 2.18vw;
+}
+.section6 .container .img-box .bottom {
+  width: 25.31vw;
+}
+.section6 .container .img-box .center {
+  position: absolute;
+  top: 9.68vw;
+  left: 0;
+  width: 26.87vw;
+}
+@media only screen and (max-width: 1080px) {
+  #fp-nav {
+    right: 0.3rem;
+    transform: translateY(-50%);
+    margin: 0 !important;
+  }
+  #fp-nav ul li {
+    margin: 0.04rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-bottom: 0.5rem;
+  }
+  #fp-nav ul li a span,
+  #fp-nav ul li:hover a span {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: none;
+    border: solid 0.04rem #92703c;
+  }
+  #fp-nav ul li a.active span,
+  #fp-nav ul li:hover a.active span {
+    margin: 0;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-color: #c49751;
+    border-color: #c49751;
+  }
+  .section {
+    box-sizing: border-box;
+    padding-top: 1.454rem;
+    background: url("../images/wap/qp/wap_zym_qp_1_bj.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .section .container {
+    width: 100%;
+  }
+  .section .fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+  }
+  .section .tits h1 {
+    font-size: 0.654rem;
+    line-height: 0.654rem;
+  }
+  .section .function {
+    box-sizing: border-box;
+    padding-left: 6vw;
+    margin-top: 0.4rem;
+    width: 100%;
+  }
+  .section .function .title {
+    margin: 0 0 0.5rem !important;
+    font-size: 0.558rem;
+    line-height: 0.558rem;
+  }
+  .section .function .function-item {
+    font-size: 0.395rem;
+    margin-bottom: 4.62962963vw;
+  }
+  .section .function .function-item .item-list {
+    box-sizing: border-box;
+    min-width: 42vw !important;
+    margin: 0;
+    min-height: 0.667rem;
+    line-height: 1;
+    padding-left: 8.05555556vw;
+  }
+  .section .function .function-item .yes {
+    background: url("../images/pc/zym_qp_2_icon_d.png") no-repeat left center;
+    background-size: 0.806rem 0.667rem;
+  }
+  .section .function .function-item .no {
+    background: url("../images/pc/zym_qp_2_icon_c.png") no-repeat left center;
+    background-size: 0.648rem 0.574rem;
+  }
+  .section .bottom-btn {
+    margin: 5vw auto 0;
+    text-align: center;
+  }
+  .section .bottom-btn .try-btn {
+    margin: 0 0.2rem;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.395rem;
+    line-height: 0.395rem;
+    border: solid 0.019rem #c49751;
+  }
+  .section1 {
+    padding: 0;
+    background: url("../images/wap/qp/wap_zym_qp_2_bj.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .section1 .fp-tableCell .container {
+    flex-direction: column !important;
+  }
+  .section1 .fp-tableCell .container .hang {
+    display: block;
+    position: absolute;
+    bottom: 0.29rem;
+    width: 0.89rem;
+  }
+  .section1 .fp-tableCell .container .hang img {
+    width: 100%;
+    height: 100%;
+  }
+  .section1 .fp-tableCell .container .text-img .title {
+    width: 47.72%;
+    margin-bottom: 0.65rem;
+  }
+  .section1 .fp-tableCell .container .text-img .title.th,
+  .section1 .fp-tableCell .container .text-img .title.vi,
+  .section1 .fp-tableCell .container .text-img .title.en {
+    margin-bottom: 0.4rem;
+    width: 80%;
+  }
+  .section1 .fp-tableCell .container .text-img .content {
+    width: 100%;
+    font-size: 0.65rem;
+    line-height: 1;
+  }
+  .section1 .fp-tableCell .container .text-img .content p {
+    margin-bottom: 0.44rem;
+  }
+  .section1 .fp-tableCell .container .game-img {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 .fp-tableCell .container .game-img .top {
+    width: 71.66%;
+  }
+  .section1 .fp-tableCell .container .game-img .item {
+    justify-content: center !important;
+    margin-top: 0.33rem;
+    width: 71.66%;
+    text-align: center;
+  }
+  .section1 .fp-tableCell .container .game-img .item .small {
+    flex: 1;
+  }
+  .section1 .fp-tableCell .container .game-img .item .small:first-child {
+    margin-right: 0.2rem;
+  }
+  .section2 .fp-tableCell .title {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .section2 .fp-tableCell .title .mintit {
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.558rem;
+    line-height: 0.558rem;
+  }
+  .section2 .fp-tableCell .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .section2 .fp-tableCell .container .img-box {
+    width: 79.53%;
+    padding-left: 0.34666667rem;
+  }
+  .section2 .fp-tableCell .container .img-box .bottom {
+    width: 100%;
+  }
+  .section2 .fp-tableCell .container .img-box .center {
+    width: 67.4vw;
+    top: 18.7vw;
+    left: 0;
+  }
+  .section2 .fp-tableCell .container .img-box .top {
+    width: 24.9vw;
+    top: 15.87vw;
+    right: 0;
+  }
+  .section3 .fp-tableCell .tits {
+    position: static;
+  }
+  .section3 .container {
+    margin-top: 0.6rem;
+    flex-wrap: revert;
+    flex-direction: column-reverse;
+  }
+  .section3 .container .function .title {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .section3 .container .img-box {
+    position: relative;
+    width: 79.16666667vw;
+    padding-left: 10.64814815vw;
+    padding-bottom: 18.51851852vw;
+  }
+  .section3 .container .img-box .bottom {
+    width: 100%;
+  }
+  .section3 .container .img-box .center {
+    position: absolute;
+    left: 0;
+    width: 72.12962963vw;
+    top: 24.07407407vw;
+  }
+  .section4 .fp-tableCell .tits {
+    position: static;
+  }
+  .section4 .container {
+    margin-top: 0.6rem;
+    flex-direction: column;
+  }
+  .section4 .container .function .title {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .section4 .container .img-box {
+    position: relative;
+    width: 67.22222222vw;
+    height: 37.87037037vw;
+    padding-left: 11.66666667vw;
+    padding-bottom: 25.74074074vw;
+  }
+  .section4 .container .img-box .bottom {
+    width: 100%;
+  }
+  .section4 .container .img-box .center {
+    position: absolute;
+    left: 0;
+    width: 67.68518519vw;
+    top: 25.55555556vw;
+  }
+  .section5 .fp-tableCell .tits {
+    position: static;
+  }
+  .section5 .container {
+    margin-top: 0.6rem;
+    flex-direction: column-reverse;
+  }
+  .section5 .container .function .title {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .section5 .container .img-box {
+    position: relative;
+    width: 70.83333333vw;
+    height: 39.81481481vw;
+    padding-left: 12.12962963vw;
+    padding-bottom: 25.27777778vw;
+  }
+  .section5 .container .img-box .bottom {
+    width: 100%;
+  }
+  .section5 .container .img-box .center {
+    position: absolute;
+    left: 0;
+    width: 70.64814815vw;
+    top: 25.27777778vw;
+  }
+  .section6 .fp-tableCell .tits {
+    position: static;
+  }
+  .section6 .container {
+    margin-top: 0.6rem;
+    flex-direction: column;
+  }
+  .section6 .container .function .title {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .section6 .container .img-box {
+    position: relative;
+    width: 73.7037037vw;
+    height: 41.66666667vw;
+    padding-left: 10.46296296vw;
+    padding-bottom: 26.2037037vw;
+  }
+  .section6 .container .img-box .bottom {
+    width: 100%;
+  }
+  .section6 .container .img-box .center {
+    position: absolute;
+    left: 0;
+    width: 71.48148148vw;
+    top: 26.2037037vw;
+  }
+}

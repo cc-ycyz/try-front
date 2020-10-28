@@ -1,0 +1,227 @@
+.english{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+.english .section1 .introduction h1{
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: 0;
+}
+.english .section1 .container img.text{
+    margin: 3rem 0;
+}
+.english .section1 .introduction p{
+    font-size: 2rem;
+	line-height: 3.5rem;
+	letter-spacing: 0;
+	color: #cfcfcf;
+}
+.english .section .title h1{
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.english .section3 .content .box .text{
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    width: 19.3rem;
+    height: 14rem;
+    overflow: hidden;
+}
+.english .section4 .sectionFour .column .text{
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.english .section5 .content .right .delTitle{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.english .section5 .content .right .delTitle span{
+    margin-top: 0;
+}
+.english .section5 .content .right ul li{
+    margin: 0 0 2rem;
+    height: auto;
+    font-size: 1.4rem;
+    line-height: 1;
+    background-position-y: center;
+}
+.english .section5 .content .right .pk-button{
+    font-size: 2.2rem;
+}
+.english .section7 .adorn{
+    font-size: 2rem;
+}
+.english .sliderBtn a{
+    font-size: 2.2rem;
+}
+.english .section9 .sectionNine .column .text{
+    margin: 2.5rem auto 0;
+    width: 20rem;
+    font-size: 2rem;
+	line-height: 4rem;
+	letter-spacing: 0;
+}
+.english .section9 .sectionNine .column:hover .text{
+    color: #fff;
+}
+.english .section9 .sectionNine .column{
+    padding-top: 36vh;
+}
+.english .tabulation .list .text .tit{
+    font-size: 2.4rem;
+    letter-spacing: 0;
+}
+.english .tabulation .list .tips{
+    font-size: 2rem;
+    line-height: 3.4rem;
+    letter-spacing: 0;
+}
+.english .section10 .other{
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 1440px){
+    .english .section3 .content .box .text{
+        padding-top: 2.6rem;
+        width: 12rem;
+        height: 8.65rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.02rem;
+    }
+    .english .section3 .content .box:hover .text{
+        letter-spacing: 0;
+    }
+    .english .section5 .content .right .delTitle{
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        letter-spacing: 0;
+        background-size: 90%;
+    }
+    .english .section5 .content .right .delTitle span{
+        margin-top: 2rem;
+    }
+    .english .section5 .content .right ul li{
+        text-align: left;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+    .english .section5 .content .right .pk-button{
+        font-size: 1.8rem;
+    }
+    .english .sliderBtn a{
+        font-size: 1.2rem;
+    }
+    .english .section9 .sectionNine .column .text{
+        width: 16rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    /*en 1*/
+    #english .section .title h1{
+        font-size: 0.587rem;
+    }
+    #english .section1 .introduction h1{
+        font-size: 0.427rem;
+        line-height: 0.586rem;
+        letter-spacing: 0;
+    }
+    #english .section1 .introduction p{
+        font-size: 0.293rem;
+        line-height: 0.48rem;
+        letter-spacing: 0;
+    }
+    #english .section1 .container img.text{
+        margin: 0.7rem 0;
+    }
+    #english .section3 .content .box .text{
+        padding-top: 0.52rem;
+        width: 2.574rem;
+        height: 1.88rem;
+        font-size: 0.32rem;
+        line-height: 0.38rem;
+        letter-spacing: 0;
+        overflow: hidden;
+    }
+    #english .section4 .sectionFour .column .text{
+        font-size: 0.24rem;
+        line-height: 0.38rem;
+        letter-spacing: 0;
+    }
+    #english .section5 .content .right .delTitle span{
+        margin-top: 0.333rem;
+    }
+    #english .section5 .content .right .delTitle{
+        font-size: 0.32rem;
+        line-height: 1;
+    }
+    #english .section5 .content .right ul{
+        bottom: 10vh;
+    }
+    #english .section5 .content .right ul li{
+        height: 1.12rem;
+        font-size: 0.28rem;
+        text-align: left;
+    }
+    #english .section5 .content .right .pk-button{
+        font-size: 0.36rem;
+    }
+    #english .section5 .content .right ul li{
+        margin: 0 0 0.4rem;
+    }
+    #english .section6 .content .left .adorn{
+        margin-top: 0;
+        letter-spacing: 0;
+    }
+    #english .section7 .container .title{
+        padding: 0 0.4rem;
+    }
+    #english .section7 .adorn{
+        padding: 0 0.4rem;
+        font-size: 0.347rem;
+    }
+    #english .sliderBtn a{
+        font-size: 0.32rem;
+    }
+    #english .section9 .sectionNine .column .text{
+        margin-top: 0;
+        margin-right: 0.32rem;
+        font-size: 0.373rem;
+        line-height: 0.4rem;
+        letter-spacing: 0;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    #english .section9 .sectionNine .column{
+        padding-top: 0;
+    }
+    #english .tabulation .list .tips{
+        padding: 0.36rem 0.33rem 0 0.61rem;
+        width: 6.78rem;
+        font-size: 0.32rem;
+        line-height: 0.4rem;
+        letter-spacing: 0;
+    }
+    #english .tabulation .list .text,#english .tabulation .list .text .tit{
+        font-size: 0.34rem;
+        letter-spacing: -0.01rem;
+    }
+    #english .section10 .other{
+        font-size: 0.32rem;
+        line-height: 0.4rem;
+        width: 9rem;
+    }
+    #english .tabulation{
+        margin-top: 5vh;
+    }
+}

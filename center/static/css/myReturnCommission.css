@@ -1,0 +1,72 @@
+.pk-commission-money{
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+}
+.pk-commission-money .money{
+    line-height: 70px;
+    padding-left: 26px;
+    color: #2b2b2b;
+    font-size: 16px;
+}
+.sum{
+    line-height: 70px;
+    color: #ff6464;
+    font-size: 18px;
+}
+.pk-commission-list{
+    margin-top: 20px;
+
+}
+#myReturnCommission .pk-article-content {
+    width: 100%;
+    padding: 0 26px;
+    margin-bottom: 10px;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form {
+    width: 100%;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table {
+    width: 100%;
+    border: solid 1px #ebe7e9;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table .pk-lines {
+    height: 12px;
+    width: 100%;
+    margin-bottom: -7px;
+    transform: translateY(-20px);
+    border-right: 1px solid #d7d6d6;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table thead {
+    height: 44px;
+    width: 100%;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table thead tr {
+    width: 100%;
+    height: 16px;
+    line-height: 31px;
+    background-color: #f5f6fa;
+    border: solid 1px #e8e8e8;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table thead tr th {
+    height: 32px;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table thead tr th p {
+    margin-top: 7px;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table .pk-tbody-tr {
+    border-bottom: solid 1px #e8e8e8;
+    height: 59px;
+    line-height: 59px;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table .pk-tbody-tr td {
+    font-family: PingFangSC-Regular;
+    color: #2b2b2b;
+    font-size: 16px;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table .pk-tbody-tr:nth-child(odd) {
+    background: #fff;
+}
+#myReturnCommission .pk-article-content .pk-contacts-form .pk-contacts-table .pk-tbody-tr:nth-child(even) {
+    background: #f8f8f8;
+}

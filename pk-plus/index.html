@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>PK-PLUS</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/animate.css">	
+	<link rel="stylesheet" href="css/fullpage.min.css" />
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/jquery.vidbacking.min.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css">
+	<!--[if lt IE 9]>
+	<script>
+	document.createElement('video');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="loading">
+		<embed class="img" src="image/loading.svg" type="image/svg+xml" />
+	</div>
+	<div class="logo">
+		<img src="image/logo.png" alt="">
+	</div>
+	<div class="floatButton">
+		<div class="contactUs">
+			<img src="image/lxbut_icon.png" alt="联系我们" title="联系我们">
+		</div>
+		<div class="scrollTop">
+			<img src="image/pc_Rbut_icon.png" alt="回到顶部" title="回到顶部">
+		</div>
+	</div>
+	<!--5 图片放大展示-->
+	<div class="enlarge">
+		<div class="slider-for">
+			<div class="item link"><img src="image/5_2_img_1.png" alt="image" draggable="false"></div>
+			<div class="item link"><img src="image/5_2_img_4.png" alt="image" draggable="false"></div>
+			<div class="item link"><img src="image/5_2_img_3.png" alt="image" draggable="false"></div>
+		</div>
+		<div class='close'></div>
+	</div>
+	
+	<!-- 内容 -->
+    <div id="index_main" class="index_main">
+    	<!--导航-->
+        <div class="section section1">
+            <div class="container">
+				<div class="animated title">
+					<h1 class="animated">卓越品质 精益求精</h1>
+					<p class="animated">EXCELLENT QUALITY AND EXCELLENCE</p>
+				</div>
+			</div>
+			<video id="video" class="vidbacking" poster="image/1_img_bg.png" data-autoplay muted loop
+			object-fit="cover"
+			playsInline={ true }
+			webkit-playsinline="true"
+			x5-playsinline="true">
+				<source data-src="video/video.mp4" type="video/mp4">
+			</video>
+        </div>
+        <div class="section section2">
+        	<div class="container">
+				<div class="animated title">
+					<h1 class="animated">
+						<img src="image/2_bt_img.png" alt="">
+						<div class="line animated"></div>
+					</h1>
+					<p class="animated">全新升级&nbsp;&nbsp;整装待发</p>
+				</div>
+				<div class="flexBox computer">
+					<div class="list animated">
+						<img data-src="image/2_icon_1.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_2.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_3.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_4.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_5.png" alt="">
+					</div>
+				</div>
+				<div class="flexBox mobile">
+					<div class="list animated">
+						<img data-src="image/2_icon_1_m.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_2_m.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_3_m.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_4_m.png" alt="">
+					</div>
+					<div class="list animated">
+						<img data-src="image/2_icon_5_m.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section3">
+			<div class="container">
+				<div class="buttonbox">
+					<a target="_blank" class="pk-button pk-button-b animated">立即去试用</a>
+				</div>
+				<div class="im-phone">
+					<img class="animated before" data-src="image/3_img_yj2_1.png" alt="">
+					<img class="animated after active" data-src="image/3_img_yj1_1.png" alt="">
+				</div>
+				<div class="animated lefttext title">
+					<h1 class="animated">边玩边聊  业内首创<div class="line animated"></div></h1>
+					<p class="animated">游戏聊天 实时跟投 畅玩无限</p>
+					<a target="_blank" class="pk-button animated">立即去试用</a>
+				</div>
+			</div>
+		</div>
+		<div class="section section4">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">无限级推广返佣<div class="line animated"></div></h1>
+					<p class="animated">裂变式传播   指数型增长</p>
+				</div>
+				<div class="sectionThree animated">
+					<img class="computer" data-src="image/pc_3_img.png" alt="">
+					<img class="mobile" data-src="image/3_img-m.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="section section5">
+			<div class="container">
+				<div class="adaption rectangle animated"></div>
+				<div class="adaption phone animated fast">
+					<div class="adaption phonetop animated slow">
+						<img data-src="image/4_img_yj3.png" alt="">
+					</div>
+					<div class="adaption phonemid animated slow">
+						<img data-src="image/4_img_yj2.png" alt="">
+					</div>
+					<img class="mainImg" data-src="image/4_img_yj1.png" alt="">
+				</div>
+				<div class="lefttext title">
+					<div class="secondTxt animated">
+						<h1 class="animated">纯原生APP<div class="line animated"></div></h1>
+						<p class="animated">创新交互设计  极速娱乐体验</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section6">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">智能风控<div class="line animated"></div></h1>
+					<p class="animated">实时监控  保驾护航</p>
+				</div>
+				<div class="sectionFive animated">
+					<img class="earthBg" data-src="image/5_q.png" alt="">
+					<div class="imgbox">
+						<div class="animated wraper imgOne">
+							<img class="animated" src="image/5_dsj.png" alt="">
+						</div>
+						<div class="animated wraper imgTwo">
+							<img class="animated" src="image/5_fkmx.png" alt="">
+						</div>
+						<div class="animated wraper imgThree">
+							<img class="animated" src="image/5_jk.png" alt="">
+						</div>
+						<div class="animated wraper imgFour">
+							<img class="animated" src="image/5_zdh.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section7">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">多元前台模板<div class="line animated"></div></h1>
+					<p class="animated">多套精美模板可供选择，让您的网站更能获得玩家的青睐</p>
+				</div>
+				<div class="slider-nav animated">
+					<div class="item image">
+						<img data-src="image/5_img_1.png" alt="image" draggable="false">
+						<div class="mask">
+							<img src="image/5_img_qp.png" alt="">
+						</div>
+					</div>
+					<div class="item image">
+						<img data-src="image/5_img_2.png" alt="image" draggable="false">
+						<div class="mask">
+							<img src="image/5_img_qp.png" alt="">
+						</div>
+					</div>
+					<div class="item image">
+						<img data-src="image/5_img_3.png" alt="image" draggable="false">
+						<div class="mask">
+							<img src="image/5_img_qp.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="sliderBtn animated">
+					<a href="https://www.pkplus.org/" target="_blank">立即体验</a>
+				</div>
+			</div>
+		</div>
+		<div class="section section8">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">全方位数据中心<div class="line animated"></div></h1>
+					<p class="animated">可视化数据中心，运营信息一目了然</p>
+				</div>
+				<div class="sectionThree animated">
+					<img class="mobile" data-src="image/6_img_1_m.png" alt="">
+					<img class="computer" data-src="image/6_img_1.png" alt="">
+				</div>
+				<img class="contentImg" data-src="image/6_img_2.png" alt="">
+			</div>
+		</div>
+		<div class="section section9">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">多终端统一管理<div class="line animated"></div></h1>
+					<p class="animated">一个账号，畅游多个终端</p>
+				</div>
+				<div class="complex">
+					<div class="circle">
+						<img class="big animated" data-src="image/7_img_3.png" alt="">
+						<img class="center animated" data-src="image/7_img_2.png" alt="">
+						<img class="small animated" data-src="image/7_img_1.png" alt="">
+						<img class="shadow animated" data-src="image/7_img_4.png" alt="">						
+					</div>
+					<div class="headImg animated">
+						<img data-src="image/7_img_6.png" alt="">
+					</div>
+					<div class="around animated">
+						<div class="position web animated">
+							<img class="animated" data-src="image/7_img_web.png" alt="">
+							<div class="text">Web</div>
+						</div>
+						<div class="position iPhone animated">
+							<img class="animated" data-src="image/7_img_iphone.png" alt="">
+							<div class="text">iPhone</div>
+						</div>
+						<div class="position iPad animated">
+							<img class="animated" data-src="image/7_img_ipad.png" alt="">
+							<div class="text">iPad</div>
+						</div>
+						<div class="position android animated">
+							<img class="animated" data-src="image/7_img_android.png" alt="">
+							<div class="text">Android</div>
+						</div>
+					</div>
+					<div class="otherLine">
+						<img class="position topleft animated" data-src="image/7_img_5.png" alt="">
+						<img class="position topright animated" data-src="image/7_img_5.png" alt="">
+						<img class="position bottomleft animated" data-src="image/7_img_5.png" alt="">
+						<img class="position bottomright animated" data-src="image/7_img_5.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section10">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">系统稳定  功能强大<div class="line animated"></div></h1>
+					<p class="animated">系统功能更强大与实用，为您创造更多价值</p>
+				</div>
+				<div class="tabulation u-cf">
+					<div class="list animated">
+						<img data-src="image/8_icon_1.png" alt="">
+						<div class="text">无痕转站技术</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_2.png" alt="">
+						<div class="text">免转钱包</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_3.png" alt="">
+						<div class="text">一拖多前台</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_4.png" alt="">
+						<div class="text">权限管理系统</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_5.png" alt="">
+						<div class="text">试玩/带玩系统</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_6.png" alt="">
+						<div class="text">免停机维护</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_7.png" alt="">
+						<div class="text">多种存款方式</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_8.png" alt="">
+						<div class="text">丰富的优惠活动</div>
+					</div>
+					<div class="list animated">
+						<img data-src="image/8_icon_9.png" alt="">
+						<div class="text">域名防劫持</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section11">
+			<div class="container">
+				<div class="animated title">
+					<h1 class="animated">合作伙伴<div class="line animated"></div></h1>
+					<p class="animated">云聚伙伴   共赢未来</p>
+				</div>
+				<div class="sectionThree animated">
+					<img class="computer" data-src="image/twelvepc.png" alt="">
+					<img class="mobile" data-src="image/twelvewap.png" alt="">
+				</div>
+			</div>
+		</div>
+        <div class="section section12">
+        	<div class="container">
+				<div class="animated title">
+					<h1 class="animated">联系我们</h1>
+					<p class="animated">CONTACT US</p>
+				</div>
+				<div class="slideBox">
+					<div class="slideimg animated fast">
+						<img class="bg computer" data-src="image/9_img_wxz.png" alt="">
+						<img class="bg mobile" data-src="image/9_img_wxz_ydd-m.png" alt="">
+						<div class="content">
+							<div class="top">
+								<img data-src="image/9_img_qq.png" alt="">
+								<div class="tit">QQ</div>
+								<div class="line"></div>
+							</div>
+							<div id="qqChat" class="bottom">
+								<p><a href="http://wpa.qq.com/msgrd?v=3&uin=2522299999&site=qq&menu=yes" data-qq='qq' target="_blank">2522299999</a></p>
+								<p><a href="http://wpa.qq.com/msgrd?v=3&uin=2622299999&site=qq&menu=yes" data-qq='qq' target="_blank">2622299999</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="slideimg animated fast">
+						<img class="bg computer" data-src="image/9_img_wxz.png" alt="">
+						<img class="bg mobile" data-src="image/9_img_wxz_ydd-m.png" alt="">
+						<div class="content">
+							<div class="top">
+								<img data-src="image/9_img_skype.png" alt="">
+								<div class="tit">SKYPE</div>
+								<div class="line"></div>
+							</div>
+							<div class="bottom">
+								<p><a href="skype:live:pkpluscc?chat">live:pkpluscc</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="slideimg animated fast">
+						<img class="bg computer" data-src="image/9_img_wxz.png" alt="">
+						<img class="bg mobile" data-src="image/9_img_wxz_ydd-m.png" alt="">
+						<div class="content">
+							<div class="top">
+								<img data-src="image/9_img_dh.png" alt="">
+								<div class="tit">微信</div>
+								<div class="line"></div>
+							</div>
+							<div class="bottom">
+								<p>pkpluscc</p>
+							</div>
+						</div>
+					</div>
+					<div class="slideimg animated fast">
+						<img class="bg computer" data-src="image/9_img_wxz.png" alt="">
+						<img class="bg mobile" data-src="image/9_img_wxz_ydd-m.png" alt="">
+						<div class="content">
+							<div class="top">
+								<img data-src="image/9_img_yx.png" alt="">
+								<div class="tit">邮箱</div>
+								<div class="line"></div>
+							</div>
+							<div class="bottom">
+								<p>pkpluscc@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.vidbacking.min.js" type="text/javascript"></script>
+	<script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('body').vidbacking({
+                'masked': true
+            });
+        });
+    </script>
+	<script src="js/index.js"></script>
+	
+</body>
+</html>

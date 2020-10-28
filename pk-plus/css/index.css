@@ -1,0 +1,1057 @@
+/*loading*/
+.loading{
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #292929;
+}
+.loading .img{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 150px;
+}
+/*公共样式*/
+html{
+    width: 100%;
+    font-size: 10px;
+}
+h1{
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 400;
+}
+.section img{
+    max-height: 60vh;
+}
+.fp-enabled body{
+    margin: 0 auto;
+    /* max-width: 1920px; */
+}
+.logo{
+    z-index: 9;
+    position: absolute;
+    top: 2.7rem;
+    left: 15%;
+}
+.floatButton{
+    z-index: 9;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+}
+.scrollTop,.contactUs{
+    margin-top: 2rem;
+    width: 5.263rem;
+	height: 5.263rem;
+    cursor: pointer;
+}
+.scrollTop img,.contactUs img{
+    width: 100%;
+}
+.section{
+    overflow: hidden;
+}
+.container{
+    display: none;
+    text-align: center;
+    color: #fcfdfe;
+}
+.container .lefttext{
+    z-index: 9;
+    position: relative;
+    text-align: left;
+}
+.line{
+    margin: 2rem auto 0;
+    width: 98%;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background-color: #e1b75e;
+}
+.container p{
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.yellow{
+    color: #e0b660;
+}
+.tips{
+    font-size: 0.9em;
+    opacity: 0.6;
+}
+.computer{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.show{
+    display: block !important;
+}
+/*公共样式 end*/
+.index_main .section1{
+    position: relative;
+	background: url(../image/1_img_bg.png) no-repeat center; 
+}
+.index_main .section2{
+	background: url(../image/2_bg_1.png) no-repeat center;
+}
+.index_main .section3{
+	background: url(../image/3_img_bg.png) no-repeat center;
+}
+.index_main .section4{
+	background: url(../image/pc_3_bg.png) no-repeat center;
+}
+.index_main .section5{
+	background: url(../image/4_img_bg.png) no-repeat center;
+}
+.index_main .section6{
+	background: url(../image/5_bg.png) no-repeat center;
+}
+.index_main .section7{
+	background: url(../image/5_img_bg.png) no-repeat center;
+}
+.index_main .section8{
+	background: url(../image/6_img_bg.png) no-repeat center;
+}
+.index_main .section9{
+	background: url(../image/7_img_bg.png) no-repeat center;
+}
+.index_main .section10{
+	background: url(../image/8_bg.png) no-repeat center;
+}
+.index_main .section11{
+	background: url(../image/11_bg.png) no-repeat center;
+}
+.index_main .section12{
+	background: url(../image/9_img_bg.png) no-repeat center;
+}
+.index_main .section{
+    width: 100%;
+    height: 100%;
+    background-size: cover;    
+}
+video { display: block; }
+/*第一屏*/
+.section1 .container{
+    z-index: 2;
+}
+.section1 #video{
+    display: none;
+    z-index: 1;
+}
+.section1 .title h1{
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+.section1 .title p{
+    line-height: 1;
+    letter-spacing: 0.25em;
+}
+/*第二屏*/
+.section2 .title h1 img{
+    width: 15rem;
+}
+.section2 .title p{
+    font-size: 2rem;
+}
+.section2 .flexBox.computer{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem auto 0;
+    max-width: 1000px;
+}
+.section2 .list{
+    display: none;
+    width: 12rem;
+}
+.section2 .list img{
+    width: 100%;
+}
+/*第三屏*/
+.section3 .container{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sectionThree{
+    display: none;
+    margin-top: 3rem;
+}
+.sectionThree img{
+    margin: 0 auto;
+    width: 80%;
+}
+.section3 .lefttext .pk-button{
+    display: block;
+    margin-top: 4rem;
+    width: 12.632rem;
+	height: 4.737rem;
+    text-align: center;
+    line-height: 4.737rem;
+    font-size: 1.733rem;
+    text-decoration: none;
+	background-image: linear-gradient(-42deg, 
+		#b0750d 0%, 
+		#62410a 46%, 
+		#140d06 100%), 
+	linear-gradient(
+		#b6b7bb, 
+		#b6b7bb);
+	background-blend-mode: normal, 
+		normal;
+	box-shadow: 3.11rem 2.52rem 5rem 0rem 
+		rgba(0, 0, 0, 0.3);
+    border-radius: 4.5rem;
+    color: #fcfdfe;
+    cursor: pointer;
+}
+.im-phone{
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.im-phone img{
+    z-index: 1;
+    position: relative;
+    float: left;
+    width: 42%;
+    -webkit-transform: scale(0.85,0.85);
+    transform: scale(0.85, 0.85);
+    transition:all 0.1s linear 0s;
+}
+.im-phone img.before{
+    -webkit-transform: translateX(8%);
+    transform: translateX(8%);
+}
+.im-phone img.after{
+    -webkit-transform: translateX(-8%);
+    transform: translateX(-8%);
+}
+.im-phone img.active{
+    z-index: 2;
+    width: 50%;
+}
+.section3 .buttonbox{
+    display: none;
+}
+.section3 .buttonbox .pk-button.pk-button-b{
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 4rem;
+    line-height: 4rem;
+    background-image: linear-gradient(-42deg, 
+    #a6772b 0%, 
+    #5d4319 46%, 
+    #130e07 100%), 
+    linear-gradient(
+        #b6b7bb, 
+        #b6b7bb);
+    box-shadow: 0 2rem 2.5rem 0
+        rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    color: #fff;
+    text-decoration: none
+}
+/*第四屏*/
+.sectionThree{
+    display: none;
+    margin-top: 3rem;
+}
+.sectionThree img{
+    margin: 0 auto;
+    width: 80%;
+}
+/*第五屏*/
+.section5 .line{
+    margin-left: 0;
+}
+.section5 .rectangle{
+    position: absolute;
+    top: 50%;
+    right: 24%;
+    width: 100rem;
+    height: 30rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: linear-gradient(135deg, 
+        #0e0b06 0%, 
+        #584119 63%, 
+        #a2762c 100%), 
+    linear-gradient(
+        #56356e, 
+        #56356e);
+    background-blend-mode: normal, 
+        normal;
+    box-shadow: 0rem 2.4rem 5.8rem 0rem 
+        rgba(155, 110, 39, 0.33);
+    opacity: 0.7;
+}
+.section5 .phone{
+    position: absolute;
+    right: -28rem;
+    top: -4rem;
+    height: 50rem;
+}
+.section5 .phone .mainImg{
+    height: 100%;
+    max-height: 100%;
+}
+.section5 .phone .adaption{
+    position: absolute;
+    top: -8rem;
+    right: 17rem;
+    height: 115%;
+}
+.section5 .phone .adaption.phonetop{
+    z-index: 9;
+    top: -13rem;
+    right: 19rem;
+}
+.section5 .phone .adaption img{
+    height: 100%;
+    max-height: 100%;
+}
+.section5 .rectangle img{
+    width: 100%;
+}
+/*6*/
+.section6 .title{
+    z-index: 2;
+    position: absolute;
+    text-align: left
+}
+.sectionFive{
+    display: inline-block;
+    position: relative;
+    -webkit-transform:scale(1.35);
+    -moz-transform:scale(1.35);
+    transform:scale(1.35);
+}
+.sectionFive .imgbox{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} 
+.sectionFive .imgbox .wraper{
+    display: none;
+    position: absolute;
+    width: 38%;
+}
+.sectionFive .imgbox .wraper img{
+    width: 100%;
+}
+.sectionFive .imgbox .imgOne{
+    z-index: 8;
+    top: 17%;
+    left: 69%;
+}
+.sectionFive .imgbox .imgTwo{
+    z-index: 7;
+    top: 34%;
+    left: 46%;
+}
+.sectionFive .imgbox .imgThree{
+    z-index: 6;
+    top: 45%;
+    left: 20%;
+}
+.sectionFive .imgbox .imgFour{
+    z-index: 5;
+    top: 50%;
+    left: -7%;
+}
+/*第7屏*/
+.section7 .container{
+    display: block
+}
+.section7 .title{
+    display: none
+}
+.section7 .slider-nav{
+    opacity: 0;
+    margin: 0 auto;
+}
+.section7 .slick-slide img{
+    margin: 0 auto;
+    width: 100%;
+    cursor: pointer;
+}
+.slick-initialized .slick-slide:focus{
+    outline: none;
+}
+.section7 .image{
+    position: relative;
+}
+.section7 .image:hover .mask{
+    display: block
+}
+.section7 .image .mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29,27,24,0.8)
+}
+.section7 .image .mask img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+.enlarge{
+    display: none;
+}
+.enlarge .close{
+    z-index: 199;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 3rem;
+    height: 3rem;
+    background: url("../image/5_2_img_2.png") no-repeat;
+    background-size: 100%;
+}
+.slider-for{
+    z-index: 199;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.slider-for .link{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-for .link img{
+    width: 100%;
+    max-width: 1200px;
+}
+.contentImg{
+    margin-top: 3rem;
+    max-width: 300px;
+    width: 100%;
+    cursor: pointer;
+}
+.sliderBtn{
+    display: none;
+    margin-top: 4rem;
+}
+.sliderBtn a{
+    margin: 0 auto;
+    display: block;
+    width: 12.632rem;
+	height: 4.737rem;
+    font-size: 1.733rem;
+    line-height: 4.737rem;
+    text-decoration: none;
+	color: #ffffff;
+	background-image: linear-gradient(-42deg, 
+		#a7772b 0%, 
+		#5d4319 46%, 
+		#130e07 100%), 
+	linear-gradient(
+		#b6b7bb, 
+		#b6b7bb);
+	background-blend-mode: normal, 
+		normal;
+	box-shadow: 0rem 2.667rem 3.333rem 0rem 
+		rgba(0, 0, 0, 0.3);
+	border-radius: 3rem;
+	opacity: 0.8;
+}
+/*9*/
+.complex{
+    position: relative;
+    margin-top: 10rem;
+}
+.complex img{
+    width: 100%;
+}
+.complex .circle{
+    position: relative;
+}
+.complex .circle img{
+    display: none;
+}
+.complex .circle .center,
+.complex .circle .small,
+.complex .circle .shadow{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+}
+.complex .circle .small{
+    top: 55%;
+    width: 54%;
+    margin-left: -27%;
+}
+.complex .circle .shadow{
+    top: 54%;
+    width: 80%;
+    margin-left: -40%;    
+}
+.complex .headImg{
+    display: none;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    width: 14em;
+    margin-left: -7em;
+}
+.around{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.around .position{
+    display: none;
+    position: absolute;
+    width: 15%;
+    max-width: 12rem;
+    min-width: 6rem;
+}
+.around .position .text{
+    color: #b79346;
+}
+.around .web{
+    top: -2rem;
+    left: 0;
+}
+.around .iPhone{
+    top: -5rem;
+    right: 12rem;
+}
+.around .iPad{
+    bottom: -3rem;
+    left: 3rem;
+}
+.around .android{
+    bottom: -2rem;
+    right: -4rem;
+}
+.otherLine{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.otherLine .position{
+    display: none;
+    position: absolute;
+    width: 3%;
+    max-width: 1.8rem;
+    min-width: 1rem;;
+}
+.otherLine .topleft{
+    top: -7rem;
+    left: 40%;  
+}
+.otherLine .topright{
+    top: 4rem;
+    right: 1rem;  
+}
+.otherLine .bottomleft{
+    top: 50%;
+    left: -4rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.otherLine .bottomright{
+    bottom: -9rem;
+    right: 35%;  
+}
+/*10*/
+.tabulation{
+    margin-top: 3rem;
+}
+.tabulation .list{
+    float: left;
+    margin-bottom: 2rem;
+    width: 33.3333333%;
+    line-height: 1.5;
+    font-size: 1.3em;
+    font-weight: 200
+}
+.tabulation img{
+    width: 8rem;
+}
+/*第12屏*/
+.section12 .container h1{
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+	letter-spacing: 1rem;
+}
+.section12 .container p{
+    margin: 0;
+    font-size: 1.263rem;
+	letter-spacing: 0.721rem;
+}
+.slideBox img{
+    display: block;
+    width: 100%;
+}
+.slideBox img.computer{
+    display: block
+}
+.slideBox img.mobile{
+    display: none
+}
+.slideBox{
+    margin-top: 2vw;
+    display: -webkit-flex;
+    display: flex;
+}
+.slideBox .active.slideimg{
+    display: none;
+    z-index: 9;  
+    -moz-box-shadow:0px 0px 6vw #333333;
+    -webkit-box-shadow:0px 0px 6vw #333333; 
+    box-shadow:0px 0px 6vw #333333;
+}
+.slideBox .active.slideimg .bg{
+    display: none;
+    -moz-transform:scaleX(1.1);
+    -ms-transform:scaleX(1.1);
+    -o-transform:scaleX(1.1);
+    -webkit-transform:scaleX(1.1);
+    transform:scaleX(1.1);
+}
+.slideBox .active.slideimg .content{
+	background-image: linear-gradient(-22deg, 
+		#7a580e 0%, 
+		#d6ab4d 100%), 
+	linear-gradient(
+		#090821, 
+		#090821);
+	background-blend-mode: normal, 
+		normal;
+	opacity: 0.9;
+}
+.slideBox .slideimg{
+    display: none;
+    position: relative;
+    width: 25%;
+    transition:all 300ms ease;
+}
+.slideBox .slideimg .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20% 0 0;
+    text-align: center;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+}
+.slideBox .slideimg .content .top{
+    position: relative;
+    padding-top: 45%;
+}
+.slideBox .slideimg .content img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 50%;
+    -webkit-transform: translateX(-50%);  /*兼容-webkit-引擎浏览器*/
+    -moz-transform: translateX(-50%);     /*兼容-moz-引擎浏览器*/
+    transform: translateX(-50%)
+}
+.slideBox .slideimg .content .tit{
+    font-size: 1.6rem;
+    line-height: 3;
+}
+.slideBox .slideimg .content .line{
+    margin: 0 auto 8%;
+    width: 10%;
+    height: 1px;
+	background-color: #ffffff;
+ }
+.slideBox .slideimg .content p{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.867rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    word-wrap:break-word
+}
+.slideBox .slideimg .content p a{
+    color: #fff;
+}
+@media only screen and (max-width: 767px){
+    .logo{
+        top: 1rem;
+        left: 2rem;
+        width: 6rem;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .scrollTop,.contactUs{
+        width: 4rem;
+        height: 4rem;
+    }
+    .computer{
+        display: none;
+    }
+    .mobile{
+        display: block
+    }
+    .container p{
+        margin-bottom: 1rem;
+    }
+    .enlarge .close{
+        top: auto;
+        bottom: 5rem;
+        right: 50%;
+        margin-right: -1.5rem;
+    }
+    /*1*/
+    .section1 .title h1{
+        font-weight: bold;
+        letter-spacing: 0.2em;
+    }
+    .section1 .title p{
+        letter-spacing: 0;
+    }
+    /*2*/
+    .section2 .flexBox.computer{
+        display: none;
+    }
+    .section2 .flexBox.mobile{
+        margin-top: 2rem;
+    }
+    .section2 .list{
+        margin: 0.5rem auto 0;
+        width: 80%;
+    }
+    /*3*/
+    .section3 .container{
+        flex-wrap:wrap-reverse;
+    }
+    .section3 .lefttext .pk-button{
+        width: 12rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .section3 .lefttext{
+        text-align: center;
+    }
+    .section3 .lefttext .pk-button{
+        display: none;
+    }
+    .im-phone{
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    .section3 .buttonbox{
+        display: block;
+        width: 100%;
+    }
+    /*5*/
+    .section5 .container{
+        top: -10rem;
+    }
+    .section5 .phone{
+        top: 16rem;
+        right: -15rem;
+        height: 36rem;
+    }
+    .section5 .phone .adaption{
+        top: -6rem;
+        right: 12rem;
+    }
+    .section5 .phone .adaption.phonetop{
+        top: -9rem;
+        right: 14rem;
+    }
+    .section5 .rectangle{
+        top: 6rem;
+        right: 2rem;
+        height: 20rem;
+        background-image: linear-gradient(135deg, 
+            #0e0b06 0%, 
+            #584119 63%, 
+            #a2762c 100%), 
+        linear-gradient(
+            #56356e, 
+            #56356e);
+        background-blend-mode: normal, 
+            normal;
+        box-shadow: 0rem 2.4rem 5.8rem 0rem 
+            rgba(155, 110, 39, 0.33);
+        opacity: 0.7;
+    }
+    /*6*/
+    .section6 .title{
+        position: static;
+    }
+    .sectionFive{
+        width: 80%;
+    }
+    .sectionFive .earthBg{
+        width: 100%;
+    }
+    /*7*/
+    .section7 .container{
+        padding: 0;
+        width: 100%;
+    }
+    .section7 .container .slider-nav{
+        margin-top: 5.6rem;
+    }
+    .sliderBtn a{
+        width: 9.6rem;
+        height: 3.6rem;
+        font-size: 1.433rem;
+        line-height: 3.6rem;
+    }
+    /*8*/
+    .section8 .sectionThree{
+        margin-top: 0;
+    }
+    .section8 .contentImg {
+        margin-top: 1rem;
+        width: 50%;
+        max-width: 260px;
+    }
+    /*9*/
+    .complex .headImg{
+        top: -1.5rem;
+        width: 12rem;
+        margin-left: -6rem;
+    }
+    .around .iPhone{
+        top: -4rem;
+        right: 3rem;
+    }
+    .around .iPad{
+        bottom: -5rem;
+        left: 1rem;
+    }
+    .around .android{
+        bottom: -3rem;
+        right: -1rem;
+    }
+    .otherLine .topleft{
+        top: -4rem;
+        left: 38%;  
+    }
+    .otherLine .topright{
+        top: 2rem;
+        right: 0;  
+    }
+    .otherLine .bottomleft{
+        top: 50%;
+        left: -1rem;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .otherLine .bottomright{
+        bottom: -2rem;
+        right: 35%;  
+    }
+    /*10*/
+    .tabulation .list{
+        font-size: 1.2em
+    }
+    /*11*/
+    .section11 .container{
+        width: 92%;
+        padding: 0;
+    }
+    .section11 .sectionThree img{
+        width: 100%;
+    }
+    /*12*/
+    .section12 .container{
+        float: right;
+        margin: 5vw 0 0;
+        padding: 0;
+        width: 90vw;
+        text-align: left;
+    }
+    .section12 .container h1{
+        font-size: 2.4rem;
+    }
+    .section12 .container p{
+        letter-spacing: 0.48rem;
+    }
+    .slideBox{
+        float: right;
+        display: block;
+        width: 100%;
+    }
+    .slideBox .slideimg{
+        width: 100%;
+        height: 26vw;
+        overflow: hidden;
+    }
+    .slideBox img.computer{
+        display: none
+    }
+    .slideBox img.mobile{
+        display: block
+    }
+    .slideBox img.bg{
+        position: absolute;
+    }
+    .slideBox .slideimg .content{
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items : center; 
+        justify-content : space-between;
+        padding: 0;
+    }
+    .slideBox .slideimg .content .top{
+        flex: 1;
+        padding-top: 12%;
+    }
+    .slideBox .slideimg .content .bottom{
+        flex: 2;
+    }
+    .slideBox .slideimg .content img{
+        top: -15%;
+        width: 60%;
+    }
+    .slideBox .slideimg .content .tit{
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .slideBox .slideimg .content .line{
+        margin: 0 auto;
+    }
+    .slideBox .slideimg .content p{
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 550px){
+    h1{
+        margin-bottom: 1rem;
+    }
+    .line{
+        margin-top: 1rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+    }
+    /*3*/
+    .section3 .lefttext .pk-button {
+        width: 10rem;
+	    height: 4rem;
+        line-height: 4rem;
+        font-size: 1.4rem;
+    }
+    /*5*/
+    .section5 .phone{
+        top: 16rem;
+        right: -9rem;
+        height: 26rem;
+    }
+    .section5 .phone .adaption{
+        top: -4rem;
+        right: 8rem;
+    }
+    .section5 .phone .adaption.phonetop{
+        top: -6.5rem;
+        right: 10rem;
+    }
+    /*9*/
+    .complex .headImg{
+        width: 8rem;
+        margin-left: -4rem;
+    }
+    /*10*/
+    .tabulation {
+        margin-top: 2rem;
+    }
+    .tabulation .list{
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem
+    }
+    .tabulation .list img{
+        width: 6rem;
+    }
+    /*11*/
+    .slideBox .slideimg .content .top{
+        padding-top: 14%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .tabulation .list{
+        font-size: 1.2rem
+    }
+}
+
+@media (min-width: 1920px) {
+    h1{
+        font-size: 5.6rem;
+    }
+    .container p{
+        font-size: 2.4rem;
+    }
+    /*3*/
+    .section5 .lefttext .pk-button{
+        width: 18rem;
+        height: 6.3rem;
+        line-height: 6.3rem;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+    /*5*/
+    .section5 .container,.section3 .container,.section8 .container{
+        max-width: 1200px;
+    }
+    .section5 .phone{
+        top: -12rem;
+        right: -26rem;
+    }
+    .section5 .rectangle{
+        right: 28%;
+        width: 110rem;
+        height: 36rem;
+    }
+    .section5 .phone .mainImg{
+        height: 126%;
+        max-height: 126%;
+    }
+    .section5 .phone .adaption{
+        height: 144%;
+        top: -9rem;
+        right: 18rem;
+    }
+    .section5 .phone .adaption.phonetop{
+        top: -14rem;
+        right: 21rem;
+    }
+    .sectionThree img{
+        width: 100%;
+    }
+}

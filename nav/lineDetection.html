@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线路检测</title>
+    <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="stylesheet" href="./nav.css">
+    <script>
+        //根据屏幕大小改变根元素字体大小
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >=
+                        750) { //750这个值，根据设计师的psd宽度来修改，是多少就写多少，现在手机端一般是750px的设计稿，如果设计师给的1920的psd，自己用Photoshop等比例缩小
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) +
+                            'px'; //750这个值，根据设计师的psd宽度来修改，是多少就写多少，现在手机端一般是750px的设计稿，如果设计师给的1920的psd，自己用Photoshop等比例缩小
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body style="background: #f5f5f5">
+    <div class="line">
+        <div class="nav-top">
+                <img class="header-bg-img" src="./img/top.png" alt="">
+            <div class="header-bg">
+                <header>
+                    <img onclick="window.history.back();" class="logo" src="./img/Return_icon.png" alt="">
+                    <div class="domain">
+                        线路检测
+                    </div>
+                </header>
+            </div>
+
+            <div class="nav-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="swiper">
+                        <!-- <div class="swiper-slide">
+                            <img src="https://image-static.segmentfault.com/642/650/642650982-5c86366425d04" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://image-static.segmentfault.com/299/387/2993876284-5cceb4963c3e1" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://image-static.segmentfault.com/131/301/1313011719-5bc6a63ef190f" alt="">
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-scroll">
+            <div class="scroll-box">
+                <img src="./img/Notice.png" alt="">
+                <marquee id="notice" class="scroll-content" width="94%" direction="left"></marquee>
+            </div>
+        </div>
+        <div class="line-list">
+            <ul>
+                <!-- <li>
+                    <div class="game-url">http://front1-aaba-app...</div>
+                    <div class="game-status">加载中...</div>
+                    <div class="game-btn"></div>
+                </li>
+                <li>
+                    <div class="game-url">http://front1-aaba-app...</div>
+                    <div class="game-status ok">50ms</div>
+                    <div class="game-btn"></div>
+                </li>
+                <li>
+                    <div class="game-url">http://front1-aaba-app...</div>
+                    <div class="game-status no">999ms</div>
+                    <div class="game-btn"></div>
+                </li>
+                <li>
+                    <div class="game-url">http://front1-aaba-app...</div>
+                    <div class="game-status wain">300ms</div>
+                    <div class="game-btn"></div>
+                </li> -->
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./swiper.min.js"></script>
+<script>
+    function auto(url) {
+        $(".line-list ul").find('li').eq(b).find('.game-url').html(url);
+        $(".line-list ul").find('li').eq(b).find('.game-status').html(tim * 10 + "ms");
+        if (tim < 100) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('ok');
+        } else if (tim >= 100 && tim <= 300) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('wain');
+        } else if (tim > 300 && tim <= 1000) {
+            $(".line-list ul").find('li').eq(b).find('.game-status').addClass('no');
+        } else {
+            $(".line-list ul").find('li').eq(b).find('.game-status').html('超时');
+        }
+        b++
+    }
+
+
+    $(function () {
+
+        // var BASE_URL = 'http://192.168.11.200:7072/app/api/navigation';
+        var BASE_URL =  window.location.origin + '/app/api/navigation';
+
+        
+        //获取轮播图
+        getbanner();
+
+        function getbanner() {
+            $.ajax({
+                url: BASE_URL + '/getbanner',
+                method: 'post',
+            }).then(function (res) {
+                renderSwiper(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染轮播图
+        function renderSwiper(data) {
+            var str = '';
+            data.forEach(function (v, i) {
+                str += '<div class="swiper-slide">' +
+                    '<img src="' + v.imgUrl + '" alt="">' +
+                    '</div>'
+            })
+            $("#swiper").html(str);
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: true, 
+                loop: true,
+                spaceBetween: 20,
+                effect: 'fade',
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            })
+        }
+
+        //获取公告
+        getNotice();
+
+        function getNotice() {
+            $.ajax({
+                url: BASE_URL + '/getnotice',
+                method: 'post',
+            }).then(function (res) {
+                renderNotice(res.data);
+            }, function (err) {
+
+            })
+        }
+
+        //渲染滚动公告
+        function renderNotice(data) {
+            if (!data || data.length < 1) {
+                $('.scroll-box').hide();
+                return;
+            }
+            var str = '';
+            data.forEach(function (v, i) {
+                if (i != data.length - 1) {
+                    str += v.content + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+                } else {
+                    str += v.content;
+                }
+            })
+            $('#notice').html(str);
+        }
+
+        //获取需要检测的线路
+        getUrl();
+
+        function getUrl() {
+            $.ajax({
+                url: BASE_URL + '/geturl',
+                method: 'post',
+            }).then(function (res) {
+                renderList(res.data);
+            }, function (err) {
+
+            })
+        }
+        //渲染线路检测
+        function renderList(autourl) {
+            tim = 1
+            setInterval("tim++", 100)
+            b = 0;
+            $.each(autourl, function (i, v) {
+                n = Number(i);
+                if (v.indexOf('http://') >= 0 || v.indexOf('https://') >= 0) {
+                    autourl[n] = v;
+                } else {
+                    autourl[n] = "http://" + v;
+                }
+            });
+
+
+            function butt() {
+                var lineDom = $('.line-list ul');
+                var str = '';
+                for (var i = 0; i < autourl.length; i++) {
+                    str += '<li>' +
+                        '<div class="game-url">' + autourl[i] + '</div>' +
+                        '<div class="game-status">加载中...</div>' +
+                        '<div class="game-btn" ></div>' +
+                        '</li>'
+                }
+                lineDom.html(str);
+            }
+            runLine();
+
+            function runLine() {
+                var str = '';
+                for (var i = 0; i < autourl.length; i++) {
+                    str += "<img src=" + autourl[i] + " width=0 height=0 onerror=auto('" + autourl[i] +
+                        "') style='display:none'>";
+                }
+                $("body").append(str);
+            }
+
+            butt();
+            //进入游戏
+            $('.game-btn').click(function (e) {
+                var url = $(this).prevAll('.game-url').html();
+                window.open(url);
+            })
+
+        }
+
+
+
+
+
+
+    })
+</script>
+
+</html>

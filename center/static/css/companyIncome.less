@@ -1,0 +1,522 @@
+[v-cloak] {
+    display: none;
+}
+
+
+
+.pk-money-box {
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+        }
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    width: 788px;
+    background: #fff;
+    .tabs {
+        padding: 0 12px;
+        border-bottom: 1px solid #e8e8e8;
+        li {
+            display: inline-block;
+            width: 100px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            position: relative;
+            a {
+                color: #666666;
+                font-size: 18px;
+                font-weight: normal;
+            }
+            &.active {
+                a {
+                    color: #5985f7;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 3px;
+                    background-color: #5985f7;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .pk-income-content {
+        padding: 0 12px;
+    }
+    .pk-income-title {
+        margin-top: 32px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 22px;
+        letter-spacing: 0px;
+        color: #111111;
+        margin-bottom: 15px;
+    }
+    .pk-income-banklist {
+        li {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 136px;
+            height: 44px;
+            line-height: 44px;
+            background-color: #f5f5f5;
+            float: left;
+            margin-right: 12px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 2px solid #f5f5f5;
+            position: relative;
+            &:nth-child(5n) {
+                margin-right: 0;
+            }
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            i {
+                position: absolute;
+                bottom: -10px;
+                right: 0;
+                font-size: 26px;
+                color: #4d83de;
+                z-index: 1;
+                display: none;
+            }
+            &.active {
+                border: 2px solid #4d83de;
+                i {
+                    display: block;
+                }
+            }
+        }
+        .pk-bankList-more {
+            border: 2px solid #f5f5f5;
+            width: 136px;
+            height: 44px;
+            line-height: 44px;
+            background-color: #f5f5f5;
+            float: left;
+            margin-right: 12px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            a {
+                display: block;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #4d83de;
+            }
+        }
+    }
+    .pk-online-income-banklist {
+        li {
+            height: 74px;
+            a {
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #686868;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 100px;
+                        height: 1px;
+                        background-color: #e8e8e8;
+                        position: absolute;
+                        top: 8px;
+                        left: 50%;
+                        margin-left: -50px;
+                    }
+                }
+            }
+        }
+        .pk-bankList-more {
+            height: 74px;
+            line-height: 74px;
+            a {
+                height: 74px;
+                line-height: 74px;
+            }
+        }
+    }
+    .pk-bankItem-details-qrcode {
+        p {
+            margin-bottom: 0;
+        }
+        .pk-hint {
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #fe8c27;
+        }
+    }
+    .pk-bankItem-details {
+        background-color: #f5f6fa;
+        border: solid 1px #e8ecef;
+        padding: 16px 20px;
+        ul {
+            float: left;
+            li {
+                span {
+                    font-size: 16px;
+                    font-weight: 200;
+                    letter-spacing: 0px;
+                    color: #2b2b2b;
+                    i {
+                        font-style: normal;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: normal;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .pk-copy {
+                    display: inline-block;
+                    width: 44px;
+                    height: 24px;
+                    background-color: #61d677;
+                    border-radius: 4px;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+        .pk-qrcode {
+            float: left;
+            margin-right: 20px;
+            img{
+                width: 120px;
+                height: 120px;
+                display: block;
+            }
+            
+        }
+    }
+    .pk-help {
+        margin: 15px 0 28px;
+        p {
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: #868686;
+            i {
+                font-size: 14px;
+                margin-right: 4px;
+                color: #fe8c27;
+            }
+            a {
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #fe8c27;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.pk-form {
+    .form-group {
+        margin-bottom: 30px;
+        .col-sm-2 {
+            width: 120px;
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+        .col-sm-offset-2 {
+            margin-left: 120px;
+        }
+        .col-sm-5 {
+            padding-left: 0;
+        }
+        .money {
+            position: relative;
+            span {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .form-control {
+        height: 40px;
+        background: #fff;
+    }
+    .input-group-addon:last-child{
+        background: #fff;
+    }
+    .pk-money-hint {
+        padding: 0;
+    }
+    .pk-submit-btn {
+        background-color: #5985f7;
+        box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 22px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        border: none;
+    }
+    .form-control-static {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        color: #868686;
+    }
+}
+
+.pk-warm-prompt {
+    background-color: #f5f6fa;
+    border: solid 1px #e8ecef;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    h2 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #868686;
+    }
+    ul {
+        li {
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #868686;
+            line-height: 24px;
+        }
+    }
+}
+
+// 入款帮助
+.pk-income-help {
+    margin-top: 30px;
+    padding: 0 12px;
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #000000;
+        span {
+            color: #ff0000;
+        }
+    }
+    .pk-back-btn {
+        margin-top: 60px;
+        width: 120px;
+        height: 46px;
+        background-color: #5985f7;
+        box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 46px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+// 入款成功
+.pk-income-success {
+    padding: 0 12px;
+    // 入款成功显示入款-成功或完成图标
+    .pk-income-success-info {
+        text-align: center;
+        padding-top: 96px;
+        i {
+            font-size: 90px;
+            color: #49c74e;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: #111111;
+            margin-top: 28px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 200;
+            font-stretch: normal;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: #2b2b2b;
+        }
+        .pk-btn {
+            margin-top: 54px;
+            .pk-btn-ok {
+                cursor: pointer;
+                display: inline-block;
+                width: 200px;
+                height: 46px;
+                line-height: 46px;
+                text-align: center;
+                background-color: #5985f7;
+                box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: ‰ 22px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                a{
+                    display: block;
+                    color: #9198ad;
+                }
+            }
+            .pk-btn-record {
+                .pk-btn-ok;
+                margin-left: 16px;
+                background-color: #ffffff;
+                box-shadow: 0px 2px 16px 1px rgba(255, 255, 255, 0.63);
+                border-radius: 5px;
+                border: solid 1px #e8e8e8;
+                color: #9198ad;
+                
+            }
+        }
+    }
+
+    // 入款成功显示入款-详细信息
+    .pk-income-success-details {
+        margin-top: 96px;
+        background-color: #f5f6fa;
+        border: solid 1px #e8ecef;
+        padding: 60px;
+        ul {
+            li {
+                text-align: center;
+                p {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #111111;
+                    font-weight: 200;
+                    b {
+                        font-weight: 200;
+                    }
+                    &:last-child {
+                        color: #2b2b2b;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    // 入款成功显示入款-联系客服
+    .pk-income-success-problem {
+        p {
+            margin-top: 94px;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #868686;
+            a {
+                color: #4d83de;
+            }
+        }
+    }
+
+    // 入款成功显示入款-广告轮播图
+    .pk-income-success-carousel {
+        margin-top: 30px;
+        margin-bottom: 48px;
+        .item{
+            width: 100%;
+            height: 168px;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        
+    }
+}
+
+// 线上入款-快捷选择金额
+.pk-fast-money-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+        cursor: pointer;
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: solid 1px #5985f7;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #5985f7;
+        float: left;
+        margin-bottom: 12px;
+        &:hover,
+        &.active {
+            background-color: #5985f7;
+            color: #fff;
+        }
+    }
+}

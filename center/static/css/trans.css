@@ -1,0 +1,291 @@
+[v-cloak] {
+  display: none;
+}
+.pk-trans-title {
+  padding-left: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.pk-trans-title h2 {
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+}
+.pk-trans-title h2 b {
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #ff6464;
+}
+.pk-trans-title h2 b span {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #ff6464;
+}
+.pk-trans-title h2 i {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #61d677;
+  cursor: pointer;
+}
+.pk-trans-platform-list {
+  padding: 30px 0 30px 24px;
+}
+.pk-trans-platform-list ul .pk-purse-money {
+  margin-right: 12px;
+  float: left;
+  width: 176px;
+  height: 120px;
+  background: url("../../static/img/hy_ed_-bg.png") no-repeat;
+  background-size: 100%;
+  opacity: 0.4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pk-trans-platform-list ul .pk-purse-money p {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  width: 100%;
+}
+.pk-trans-platform-list ul .pk-purse-money span {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.pk-trans-platform-list ul li {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  float: left;
+  width: 176px;
+  height: 120px;
+  background-color: #ffffff;
+  border: solid 1px #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pk-trans-platform-list ul li p {
+  width: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #ff6464;
+}
+.pk-trans-platform-list ul li span {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-trans-platform-list ul li .pk-trans-in-out div {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #5985f7;
+  padding-left: 16px;
+}
+.pk-trans-platform-list ul li .pk-trans-in-out div:first-child {
+  padding-left: 0;
+  padding-right: 16px;
+  position: relative;
+}
+.pk-trans-platform-list ul li .pk-trans-in-out div:first-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background-color: #e8e8e8;
+}
+.pk-trans-platform-list ul li:hover {
+  box-shadow: 0px 7px 12px 1px rgba(175, 175, 175, 0.26);
+  margin-top: -3px;
+  margin-bottom: 15px;
+}
+.pk-trans-fast-back-btn {
+  padding-left: 24px;
+}
+.pk-trans-fast-back-btn div {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #5985f7;
+  box-shadow: 0px 2px 16px 1px rgba(89, 133, 247, 0.63);
+  border-radius: 5px;
+  margin-right: 18px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.pk-trans-fast-back-btn div:last-child {
+  color: #9198ad;
+  background-color: #ffffff;
+  border: solid 1px #e8e8e8;
+  box-shadow: none;
+}
+.pk-warm-prompt {
+  background-color: #f5f6fa;
+  border: solid 1px #e8ecef;
+  padding: 18px 24px;
+  margin: 30px 24px;
+}
+.pk-warm-prompt h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #868686;
+}
+.pk-warm-prompt ul li {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #868686;
+  line-height: 24px;
+}
+.fast-pay-hint {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 7;
+  letter-spacing: 0px;
+  color: #111111;
+  text-align: center;
+}
+#pk_fast_pay form {
+  padding: 40px 30px 0;
+}
+#pk_fast_pay form .col-sm-9 {
+  padding-left: 0;
+}
+#pk_fast_pay form .form-group {
+  margin: 0;
+  margin-bottom: 20px;
+}
+#pk_fast_pay form .form-group:last-child {
+  margin-bottom: 40px;
+}
+#pk_fast_pay form .input-group i {
+  font-size: 30px;
+}
+#pk_fast_pay form .input-group i.icon-hy_ed_gx {
+  color: #d1d1d1;
+}
+#pk_fast_pay form .input-group i.icon-hy_ed_gx1 {
+  color: #5280f6;
+}
+#pk_fast_pay form .input-group p {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #fe8c27;
+}
+#pk_trans_in form {
+  padding: 40px 30px 0;
+}
+#pk_trans_in form .col-sm-9 {
+  padding-left: 0;
+}
+#pk_trans_in form .form-group {
+  margin: 0;
+  margin-bottom: 20px;
+}
+#pk_trans_in form .form-group:last-child {
+  margin-bottom: 40px;
+}
+#pk_trans_in form .input-group i {
+  font-size: 30px;
+}
+#pk_trans_in form .input-group i.icon-hy_ed_gx {
+  color: #d1d1d1;
+}
+#pk_trans_in form .input-group i.icon-hy_ed_gx1 {
+  color: #5280f6;
+}
+#pk_trans_in form .input-group p {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #fe8c27;
+}
+#pk_trans_in .col-sm-8 {
+  padding-left: 0;
+}
+#pk_trans_in .pk-in-out {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #111111;
+}
+#pk_trans_in .pk-in-out span {
+  color: #5985f7;
+}
+.pk-fast-money-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pk-fast-money-btn li {
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #5985f7;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #5985f7;
+  float: left;
+  margin-bottom: 12px;
+}
+.pk-fast-money-btn li:hover,
+.pk-fast-money-btn li.active {
+  background-color: #5985f7;
+  color: #fff;
+}
+.input-group-addon:last-child {
+  background: #fff;
+}

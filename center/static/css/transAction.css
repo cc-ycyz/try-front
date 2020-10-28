@@ -1,0 +1,54 @@
+.pk-person-trans {
+  padding: 30px 26px;
+}
+.pk-person-trans .pk-table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+.pk-person-trans .pk-table .pk-table-head {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: #f5f6fa;
+  border-bottom: 1px solid #e8e8e8;
+  color: #111111;
+}
+.pk-person-trans .pk-table .pk-table-head .col-md-2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-person-trans .pk-table .pk-table-head .col-md-2::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #d7d6d6;
+}
+.pk-person-trans .pk-table .pk-table-head .col-md-2:last-child::before {
+  width: 0;
+}
+.pk-person-trans .pk-table .pk-table-cent .pk-table-tr {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #e8e8e8;
+}
+.pk-person-trans .pk-table .pk-table-cent .pk-table-tr .col-md-2 {
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-person-trans .pk-table .pk-table-cent .pk-table-tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.pk-person-trans .pk-table .pk-table-cent .pk-table-tr:last-child {
+  border: 0;
+}
+.pk-person-trans .pk-table .pk-table-cent .pk-table-tr:hover {
+  background-color: #f2f6ff;
+}

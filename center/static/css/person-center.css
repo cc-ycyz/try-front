@@ -1,0 +1,268 @@
+.pk-person {
+  padding: 15px 24px;
+}
+.pk-person h1 {
+  line-height: 50px;
+  font-size: 18px;
+  color: #111111;
+}
+.pk-person .pk-person-head {
+  height: 50px;
+  overflow: hidden;
+}
+.pk-person .pk-person-head .pk-person-tit {
+  float: left;
+  margin: 0 0 16px 0;
+  line-height: 50px;
+  font-size: 18px;
+  color: #111111;
+}
+.pk-person .pk-person-head .pk-person-btn {
+  float: right;
+}
+.pk-person .pk-person-head .pk-person-btn .btn {
+  width: 111px;
+  height: 36px;
+  font-size: 14px;
+  color: #fefefe;
+  background-color: #5985f7;
+  border-radius: 18px;
+  border: 0;
+}
+.pk-person .pk-balance {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+.pk-person .pk-balance .pk-money {
+  margin-right: 10px;
+  color: #ff6464;
+}
+.pk-person .pk-balance .pk-money span {
+  font-size: 26px;
+}
+.pk-person .pk-balance .glyphicon {
+  color: #61d677;
+}
+.pk-person .pk-balance-ul {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #868686;
+}
+.pk-person .pk-balance-ul .pk-balance-list {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 176px;
+  height: 90px;
+  text-align: center;
+}
+.pk-person .pk-balance-ul .pk-balance-list .pk-balance-box {
+  padding: 20px 0;
+  border: solid 1px #e8e8e8;
+}
+.pk-person .pk-balance-ul .pk-balance-list .pk-balance-box .pk-money {
+  font-size: 20px;
+  color: #ff6464;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pk-person .pk-balance-ul .pk-balance-list .pk-balance-box .pk-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pk-person .pk-balance-ul .pk-balance-list:hover .pk-balance-box {
+  margin-top: -3px;
+  box-shadow: 0px 7px 12px 1px rgba(175, 175, 175, 0.26);
+}
+.pk-person .pk-balance-ul .pk-balance-list:nth-child(4n) {
+  margin-right: 0;
+}
+.pk-person .pk-balance-ul .pk-wallet .pk-balance-box {
+  color: #fff;
+  background: url("../../static/img/hy_wdzh_jbzx_bg.png") no-repeat;
+  background-size: 100%;
+  border: 0;
+}
+.pk-person .pk-balance-ul .pk-wallet .pk-balance-box .pk-money {
+  color: #fff;
+}
+.pk-person-info {
+  padding: 9px 20px;
+  margin-bottom: 10px;
+  background-color: #f5f6fa;
+  border: solid 1px #e8ecef;
+}
+.pk-person-info .pk-info-deadpic {
+  float: left;
+  margin-right: 30px;
+  width: 45px;
+  height: 45px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 70px;
+  color: #5985f7;
+}
+.pk-person-info .pk-info-box {
+  float: left;
+}
+.pk-person-info .pk-person-list {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.pk-person-info .pk-person-list .pk-list-tit {
+  float: left;
+  height: 30px;
+  width: 100px;
+  color: #2b2b2b;
+}
+.pk-person-info .pk-person-list .pk-list-tit span {
+  display: inline-block;
+  width: 100%;
+}
+.pk-person-info .pk-person-list .pk-list-data {
+  float: left;
+  font-weight: bold;
+  color: #000000;
+}
+.pk-person-info .pk-person-list .pk-list-data span {
+  margin-right: 10px;
+  font-weight: normal;
+  color: #2b2b2b;
+}
+.pk-audit-query {
+  padding: 10px 25px;
+}
+.pk-audit-query .pk-audit-head {
+  height: 55px;
+}
+.pk-audit-query .pk-audit-head h1 {
+  float: left;
+  line-height: 50px;
+  font-size: 20px;
+  color: #5985f7;
+}
+.pk-audit-query .pk-audit-head .pk-audit-btn {
+  float: right;
+}
+.pk-audit-query .pk-audit-head .pk-audit-btn .btn {
+  padding: 0;
+  width: 111px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fefefe;
+  border: 0;
+  background-color: #5985f7;
+  border-radius: 18px;
+}
+.pk-audit-center {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+.pk-audit-center .pk-table-head {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f5f6fa;
+  border-bottom: 1px solid #e8e8e8;
+  color: #111111;
+}
+.pk-audit-center .pk-table-head .pk-table-th {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-audit-center .pk-table-head .pk-table-th::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #d7d6d6;
+}
+.pk-audit-center .pk-table-head .pk-table-th:last-child::before {
+  width: 0;
+}
+.pk-audit-center .pk-nodatas {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid 1px #e8e8e8;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-table-td {
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box {
+  position: relative;
+  overflow: visible;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 183px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 13px 1px rgba(102, 102, 102, 0.3);
+  border: solid 1px #e8e8e8;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover .pk-popover-head {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  background-color: #f5f6fa;
+  border-bottom: solid 1px #e8e8e8;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover .pk-popover-head .col-xs-6 {
+  position: relative;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover .pk-popover-head .col-xs-6::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #d7d6d6;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover .pk-popover-ul {
+  line-height: 30px;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box .pk-popover .pk-popover-ul .pk-popover-list:nth-child(2n) {
+  background-color: #f8f8f8;
+  border-top: solid 1px #e8e8e8;
+  border-bottom: solid 1px #e8e8e8;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box:hover {
+  text-decoration: underline;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr .pk-popover-box:hover .pk-popover {
+  display: block;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr:last-child {
+  border: 0;
+}
+.pk-audit-center .pk-table-cent .pk-table-tr:hover {
+  background-color: #f2f6ff;
+}
